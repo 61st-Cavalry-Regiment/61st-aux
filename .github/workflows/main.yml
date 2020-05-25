@@ -26,4 +26,4 @@ jobs:
     - name: Config Style Checker
       run: python tools/config_style_checker.py
     - name: SQFLint
-      run: sqflint -e e -d "61st Aux" -x "cba_settings_userconfig.sqf"
+      run: sqflint -e e -d "61st Aux"
