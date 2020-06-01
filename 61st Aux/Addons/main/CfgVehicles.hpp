@@ -1,11 +1,26 @@
 class CfgVehicles {
-	class Turrets;
-	class MainTurret;
-	class UserActions;
-	class ACE_SelfActions;
-	class RHS_UH60M_US_base;
-	class RHS_UH60M: RHS_UH60M_US_base
-	{
+	class Helicopter {
+		class ACE_SelfActions;
+	};
+	class Helicopter_Base_F: Helicopter {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class Helicopter_Base_H: Helicopter_Base_F {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class Heli_Transport_01_base_F: Helicopter_Base_H {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class RHS_UH60_Base: Heli_Transport_01_base_F {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class RHS_UH60M_base: RHS_UH60_Base {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class RHS_UH60M_US_base: RHS_UH60M_base {
+		class ACE_SelfActions: ACE_SelfActions {};
+	};
+	class RHS_UH60M: RHS_UH60M_US_base {
 		class MFD
 		{
 			class Kimi_HMD_Common
@@ -3520,5 +3535,13 @@ class CfgVehicles {
 				};
 			};
 		};
+	};
+	class RHS_UH60M2: RHS_UH60M {
+	};
+	class RHS_UH60M_ESSS: RHS_UH60M2 {
+	};
+	class 61stAux_UH60M_DAP: RHS_UH60M_ESSS{
+		displayName = "UH-60M (DAP)";
+		scope = 0;
 	};
 };
