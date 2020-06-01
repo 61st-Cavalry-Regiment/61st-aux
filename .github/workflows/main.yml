@@ -2,9 +2,7 @@ name: SQF Checker
 
 on:
   push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
 
 jobs:
   build:
