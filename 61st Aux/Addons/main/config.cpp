@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {"RHS_UH60M"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
@@ -15,3 +15,4 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
+#include "CfgVehicles.hpp"
