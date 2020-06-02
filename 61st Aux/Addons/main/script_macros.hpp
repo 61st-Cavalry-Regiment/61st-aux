@@ -1,5 +1,10 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
+//scopes
+#define private 0
+#define protected 1
+#define public 2
+
 // weapon types
 #define TYPE_WEAPON_PRIMARY 1
 #define TYPE_WEAPON_HANDGUN 2

@@ -13,6 +13,23 @@ class CfgVehicles {
 	};
 	class RHS_UH60_Base: Heli_Transport_01_base_F {
 		class ACE_SelfActions: ACE_SelfActions {};
+		weapons[] =
+		{
+			"rhsusf_weap_ANALQ144"
+		};
+		magazines[] =
+		{
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM" ,
+			"rhsusf_mag_DIRCM"
+		};
 	};
 	class RHS_UH60M_base: RHS_UH60_Base {
 		class ACE_SelfActions: ACE_SelfActions {};
@@ -3535,13 +3552,92 @@ class CfgVehicles {
 				};
 			};
 		};
+		class Components;
 	};
 	class RHS_UH60M2: RHS_UH60M {
 	};
 	class RHS_UH60M_ESSS: RHS_UH60M2 {
+		class Components: Components {
+			class TransportPylonsComponent;
+		};
 	};
-	class 61stAux_UH60M_DAP: RHS_UH60M_ESSS{
+	class 61stAux_UH60M_DAP: RHS_UH60M_ESSS {
 		displayName = "UH-60M (DAP)";
-		scope = 0;
+		scope = public;
+		class pilotCamera
+        {
+            class OpticsIn
+            {
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(75 / 120)";
+                    minFov = "(75 / 120)";
+                    maxFov = "(75 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+                };
+                class Medium: Wide
+                {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(14.4 / 120)";
+                    minFov = "(14.4 / 120)";
+                    maxFov = "(14.4 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(4.8 / 120)";
+                    minFov = "0.01";
+                    maxFov = "(4.8 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+            };
+            minTurn = -180;
+            maxTurn = 180;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = 25;
+            maxXRotSpeed = 1;
+            maxYRotSpeed = 1;
+            maxMouseXRotSpeed = 0.5;
+            maxMouseYRotSpeed = 0.5;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+        };
+		class Components: Components {
+			class TransportPylonsComponent: TransportPylonsComponent {
+				class Presets {
+					class Empty {
+						displayName = "Empty";
+						attachment[] = {};
+					};
+					class Default {
+						displayName = "Default";
+						attachment[] = {"rhs_mag_fueltank_UH60","","","rhs_mag_fueltank_UH60","rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
+					};
+					class Thunder {
+						displayName = "Thunder";
+						attachment[] = {"rhs_mag_M229_19","PylonRack_4Rnd_ACE_Hellfire_AGM114L","PylonRack_4Rnd_ACE_Hellfire_AGM114K","rhs_mag_M229_19","rhsusf_M130_CMFlare_Chaff_Magazine_x2"};
+					};
+				};
+			};
+		};
+        memoryPointDriverOptics = "slingload0";
+		weapons[] += {"Laserdesignator_pilotCamera"};
+		magazines[] += {"Laserbatteries"};
+
+
 	};
 };
