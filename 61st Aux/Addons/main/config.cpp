@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {"RHS_UH60M"};
-        weapons[] = {};
+        weapons[] = {"61st_invisible_nvg"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
         author = "61st Aux Team";
@@ -16,3 +16,4 @@ class CfgPatches {
 
 #include "CfgSettings.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

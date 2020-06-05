@@ -19,16 +19,7 @@ class CfgVehicles {
 		};
 		magazines[] =
 		{
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM" ,
-			"rhsusf_mag_DIRCM"
+			mag_10(rhsusf_mag_DIRCM)
 		};
 	};
 	class RHS_UH60M_base: RHS_UH60_Base {
@@ -3561,7 +3552,7 @@ class CfgVehicles {
 			class TransportPylonsComponent;
 		};
 	};
-	class 61stAux_UH60M_DAP: RHS_UH60M_ESSS {
+	class 61st_UH60M_DAP: RHS_UH60M_ESSS {
 		displayName = "UH-60M (DAP)";
 		scope = public;
 		class pilotCamera
