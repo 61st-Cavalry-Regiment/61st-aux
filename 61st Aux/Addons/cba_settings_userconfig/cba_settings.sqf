@@ -6,12 +6,14 @@ force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 force force ace_advanced_ballistics_simulationInterval = 0;
 
+
 // ACE Advanced Throwing
 force force ace_advanced_throwing_enabled = true;
 force force ace_advanced_throwing_enablePickUp = true;
 force force ace_advanced_throwing_enablePickUpAttached = true;
 force force ace_advanced_throwing_showMouseControls = true;
 force force ace_advanced_throwing_showThrowArc = true;
+
 
 // ACE Arsenal
 force force ace_arsenal_allowDefaultLoadouts = true;
@@ -22,6 +24,7 @@ force force ace_arsenal_enableModIcons = true;
 force force ace_arsenal_EnableRPTLog = false;
 force force ace_arsenal_fontHeight = 4.5;
 
+
 // ACE Artillery
 force force ace_artillerytables_advancedCorrections = false;
 force force ace_artillerytables_disableArtilleryComputer = false;
@@ -30,11 +33,13 @@ force force ace_mk6mortar_allowCompass = true;
 force force ace_mk6mortar_allowComputerRangefinder = true;
 force force ace_mk6mortar_useAmmoHandling = true;
 
+
 // ACE Captives
 force force ace_captives_allowHandcuffOwnSide = true;
 force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 2;
 force force ace_captives_requireSurrenderAi = false;
+
 
 // ACE Common
 force force ace_common_allowFadeMusic = true;
@@ -48,12 +53,14 @@ ace_common_settingProgressBarLocation = 0;
 force force ace_noradio_enabled = true;
 force force ace_parachute_hideAltimeter = true;
 
+
 // ACE Cook off
 force force ace_cookoff_ammoCookoffDuration = 0.5;
 force force ace_cookoff_enable = 0;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_probabilityCoef = 0.5;
+
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
@@ -62,10 +69,12 @@ force force ace_csw_dragAfterDeploy = true;
 force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
+
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = true;
 force force ace_explosives_punishNonSpecialists = true;
 force force ace_explosives_requireSpecialist = false;
+
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
@@ -74,10 +83,12 @@ force force ace_frag_maxTrackPerFrame = 10;
 force force ace_frag_reflectionsEnabled = false;
 force force ace_frag_spallEnabled = false;
 
+
 // ACE Goggles
 ace_goggles_effects = 2;
 ace_goggles_showClearGlasses = false;
 ace_goggles_showInThirdPerson = false;
+
 
 // ACE Hearing
 force force ace_hearing_autoAddEarplugsToUnits = true;
@@ -87,10 +98,12 @@ force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = true;
 force force ace_hearing_unconsciousnessVolume = 0.4;
 
+
 // ACE Interaction
 force force ace_interaction_disableNegativeRating = false;
 ace_interaction_enableMagazinePassing = true;
 force force ace_interaction_enableTeamManagement = true;
+
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
@@ -113,6 +126,7 @@ ace_interact_menu_textSize = 2;
 ace_interact_menu_useListMenu = false;
 ace_interact_menu_useListMenuSelf = false;
 
+
 // ACE Logistics
 force force ace_cargo_enable = true;
 force force ace_cargo_loadTimeCoefficient = 5;
@@ -120,26 +134,28 @@ force force ace_cargo_paradropTimeCoefficent = 2.5;
 force force ace_rearm_distance = 20;
 force force ace_rearm_level = 1;
 force force ace_rearm_supply = 0;
-force force ace_refuel_hoseLength = 12;
+force force ace_refuel_hoseLength = 20;
 force force ace_refuel_rate = 1;
 force force ace_repair_addSpareParts = true;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
 ace_repair_displayTextOnRepair = true;
-force force ace_repair_engineerSetting_fullRepair = 2;
-force force ace_repair_engineerSetting_repair = 1;
+force force ace_repair_engineerSetting_fullRepair = 0;
+force force ace_repair_engineerSetting_repair = 0;
 force force ace_repair_engineerSetting_wheel = 0;
-force force ace_repair_fullRepairLocation = 2;
+force force ace_repair_fullRepairLocation = 0;
 force force ace_repair_fullRepairRequiredItems = ["ToolKit"];
 force force ace_repair_miscRepairRequiredItems = ["ToolKit"];
 force force ace_repair_repairDamageThreshold = 0.6;
 force force ace_repair_repairDamageThreshold_engineer = 0.4;
 force force ace_repair_wheelRepairRequiredItems = [];
 
+
 // ACE Magazine Repack
 force force ace_magazinerepack_timePerAmmo = 1.5;
 force force ace_magazinerepack_timePerBeltLink = 8;
 force force ace_magazinerepack_timePerMagazine = 2;
+
 
 // ACE Map
 force force ace_map_BFT_Enabled = false;
@@ -154,6 +170,7 @@ force force ace_map_mapShake = true;
 force force ace_map_mapShowCursorCoordinates = false;
 force force ace_markers_moveRestriction = 0;
 
+
 // ACE Map Gestures
 ace_map_gestures_defaultColor = [1,0.88,0,0.7];
 ace_map_gestures_defaultLeadColor = [1,0.88,0,0.95];
@@ -162,9 +179,11 @@ force force ace_map_gestures_interval = 0.03;
 force force ace_map_gestures_maxRange = 7;
 ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
 
+
 // ACE Map Tools
 ace_maptools_drawStraightLines = true;
 ace_maptools_rotateModifierKey = 1;
+
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
@@ -219,6 +238,7 @@ force force ace_medical_treatment_medicPAK = 1;
 force force ace_medical_treatment_medicSurgicalKit = 1;
 force force ace_medical_treatment_timeCoefficientPAK = 1;
 
+
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
 ace_nametags_nametagColorBlue = [0.67,0.67,1,1];
@@ -236,6 +256,7 @@ ace_nametags_showSoundWaves = 1;
 ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
+
 // ACE Nightvision
 force force ace_nightvision_aimDownSightsBlur = 0;
 force force ace_nightvision_disableNVGsWithSights = false;
@@ -243,6 +264,7 @@ force force ace_nightvision_effectScaling = 1;
 force force ace_nightvision_fogScaling = 1;
 force force ace_nightvision_noiseScaling = 0;
 ace_nightvision_shutterEffects = true;
+
 
 // ACE Overheating
 ace_overheating_displayTextOnJam = true;
@@ -253,11 +275,13 @@ ace_overheating_showParticleEffectsForEveryone = false;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_unJamOnreload = false;
 
+
 // ACE Pointing
 force force ace_finger_enabled = true;
 ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
 ace_finger_indicatorForSelf = true;
 force force ace_finger_maxRange = 4;
+
 
 // ACE Pylons
 force force ace_pylons_enabledForZeus = true;
@@ -268,6 +292,7 @@ force force ace_pylons_requireToolkit = true;
 force force ace_pylons_searchDistance = 15;
 force force ace_pylons_timePerPylon = 5;
 
+
 // ACE Quick Mount
 force force ace_quickmount_distance = 3;
 force force ace_quickmount_enabled = true;
@@ -275,9 +300,11 @@ ace_quickmount_enableMenu = 3;
 ace_quickmount_priority = 0;
 force force ace_quickmount_speed = 18;
 
+
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = false;
+
 
 // ACE Scopes
 force force ace_scopes_correctZeroing = true;
@@ -292,11 +319,13 @@ force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
 force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
 
+
 // ACE Spectator
 force force ace_spectator_enableAI = false;
 ace_spectator_maxFollowDistance = 5;
 force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
+
 
 // ACE Switch Units
 force force ace_switchunits_enableSafeZone = true;
@@ -306,6 +335,7 @@ force force ace_switchunits_switchToCivilian = false;
 force force ace_switchunits_switchToEast = false;
 force force ace_switchunits_switchToIndependent = false;
 force force ace_switchunits_switchToWest = false;
+
 
 // ACE Uncategorized
 force force ace_fastroping_requireRopeItems = false;
@@ -318,6 +348,7 @@ force force ace_microdagr_waypointPrecision = 3;
 ace_optionsmenu_showNewsOnMainMenu = true;
 force force ace_overpressure_distanceCoefficient = 1;
 ace_tagging_quickTag = 1;
+
 
 // ACE User Interface
 force force ace_ui_allowSelectiveUI = true;
@@ -356,15 +387,18 @@ ace_ui_weaponName = true;
 ace_ui_weaponNameBackground = true;
 ace_ui_zeroing = true;
 
+
 // ACE Vehicle Lock
 force force ace_vehiclelock_defaultLockpickStrength = 10;
 force force ace_vehiclelock_lockVehicleInventory = false;
 force force ace_vehiclelock_vehicleStartingLockState = -1;
 
+
 // ACE Vehicles
 ace_vehicles_hideEjectAction = true;
 force force ace_vehicles_keepEngineRunning = false;
 ace_vehicles_speedLimiterStep = 5;
+
 
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = true;
@@ -374,6 +408,7 @@ ace_viewdistance_viewDistanceAirVehicle = 0;
 ace_viewdistance_viewDistanceLandVehicle = 0;
 ace_viewdistance_viewDistanceOnFoot = 0;
 
+
 // ACE Weapons
 ace_common_persistentLaserEnabled = false;
 force force ace_laserpointer_enabled = true;
@@ -381,16 +416,19 @@ ace_reload_displayText = true;
 ace_reload_showCheckAmmoSelf = false;
 ace_weaponselect_displayText = true;
 
+
 // ACE Weather
 force force ace_weather_enabled = true;
 ace_weather_showCheckAirTemperature = true;
 force force ace_weather_updateInterval = 60;
 force force ace_weather_windSimulation = true;
 
+
 // ACE Wind Deflection
 force force ace_winddeflection_enabled = true;
 force force ace_winddeflection_simulationInterval = 0.05;
 force force ace_winddeflection_vehicleEnabled = true;
+
 
 // ACE Zeus
 force force ace_zeus_autoAddObjects = false;
@@ -401,15 +439,18 @@ force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
 
+
 // CBA UI
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
+
 
 // CBA Weapons
 cba_disposable_dropUsedLauncher = 2;
 force force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
+
 
 // DUI - Squad Radar - Indicators
 diwako_dui_indicators_fov_scale = false;
@@ -423,6 +464,7 @@ diwako_dui_indicators_size = 1;
 diwako_dui_indicators_style = "standard";
 diwako_dui_indicators_useACENametagsRange = true;
 
+
 // DUI - Squad Radar - Main
 diwako_dui_ace_hide_interaction = true;
 diwako_dui_colors = "standard";
@@ -434,6 +476,7 @@ diwako_dui_main_squadGreen = [0,1,0,1];
 diwako_dui_main_squadMain = [1,1,1,1];
 diwako_dui_main_squadRed = [1,0,0,1];
 diwako_dui_main_squadYellow = [1,1,0,1];
+
 
 // DUI - Squad Radar - Radar
 diwako_dui_compass_hide_alone_group = false;
@@ -471,7 +514,9 @@ diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
 diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
+
 // LAMBS Danger
+force lambs_danger_combatShareRange = 200;
 force force lambs_danger_CQB_formations_COLUMN = false;
 force force lambs_danger_CQB_formations_DIAMOND = true;
 force force lambs_danger_CQB_formations_ECH LEFT = false;
@@ -511,19 +556,24 @@ force force lambs_danger_radio_shout = 100;
 force force lambs_danger_radio_WEST = 500;
 force force lambs_danger_RenderExpectedDestination = false;
 
+
 // LAMBS Danger Eventhandlers
 force force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
 force force lambs_eventhandlers_ExplosionReactionTime = 9;
 
+
 // LAMBS Danger WP
 force force lambs_wp_autoAddArtillery = false;
+
 
 // Zeus Enhanced
 zen_camera_adaptiveSpeed = true;
 zen_camera_defaultSpeedCoef = 1;
 zen_camera_fastSpeedCoef = 1;
 zen_camera_followTerrain = true;
+force zen_common_ascensionMessages = false;
 force force zen_common_autoAddObjects = true;
+force zen_common_cameraBird = false;
 zen_common_darkMode = false;
 zen_common_disableGearAnim = false;
 zen_common_preferredArsenal = 1;
@@ -548,5 +598,3 @@ zen_vision_enableRedGreenThermal = false;
 zen_vision_enableRedHotCold = false;
 zen_vision_enableWhiteHot = true;
 zen_vision_enableWhiteHotRedCold = false;
-
-
