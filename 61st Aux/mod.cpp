@@ -1,7 +1,7 @@
 name        ="61st Aux";
-picture     ="\x\61staux\addons\main\data\textures\61st.paa";
-logosmall   ="\x\61staux\addons\main\data\textures\61st.paa";
-logo        ="\x\61staux\addons\main\data\textures\61st.paa";
+picture     ="\x\61st\addons\main\data\textures\61st.paa";
+logosmall   ="\x\61st\addons\main\data\textures\61st.paa";
+logo        ="\x\61st\addons\main\data\textures\61st.paa";
 action      ="https://61st-regiment.com/";
 overview    ="The Auxiliary mod for the 61st Cavalry Regiment";
 hidePicture =0;

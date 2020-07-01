@@ -3,11 +3,11 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"RHS_UH60M"};
+        units[] = {"RHS_UH60M", QGVAR(UH60M_DAP)};
         weapons[] = {"61st_invisible_nvg"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
-        author = "61st Aux Team";
+        author = CSTRING(author);
         url = "https://61st-regiment.com/";
         authors[] = {"Thunder"};
         VERSION_CONFIG;

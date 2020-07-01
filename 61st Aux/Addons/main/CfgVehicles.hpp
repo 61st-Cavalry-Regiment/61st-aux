@@ -3552,7 +3552,7 @@ class CfgVehicles {
 			class TransportPylonsComponent;
 		};
 	};
-	class 61st_UH60M_DAP: RHS_UH60M_ESSS {
+	class GVAR(UH60M_DAP): RHS_UH60M_ESSS {
 		displayName = "UH-60M (DAP)";
 		scope = public;
 		class pilotCamera
