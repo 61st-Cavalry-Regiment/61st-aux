@@ -21,6 +21,20 @@ class CfgVehicles {
 		{
 			mag_10(rhsusf_mag_DIRCM)
 		};
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Dashboard Upper";
+				shortName = "D.Up";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"crew"};
+				mountedRadio = "ACRE_PRC117F";
+				isRadioRemovable = 0;
+			};
+			class Rack_2: Rack_1 {
+				displayName = "Dashboard Lower";
+				shortName = "D.Low";
+			};
+		};
 	};
 	class RHS_UH60M_base: RHS_UH60_Base {
 		class ACE_SelfActions: ACE_SelfActions {};
@@ -3553,7 +3567,7 @@ class CfgVehicles {
 		};
 	};
 	class GVAR(UH60M_DAP): RHS_UH60M_ESSS {
-		displayName = "UH-60M (DAP)";
+		displayName = CSTRING(dap);
 		scope = public;
 		class pilotCamera
         {
@@ -3630,5 +3644,39 @@ class CfgVehicles {
 		magazines[] += {"Laserbatteries"};
 
 
+	};
+	class Heli_Attack_01_base_F: Helicopter_Base_F {};
+	class RHS_AH64_base: Heli_Attack_01_base_F {
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Dashboard Upper";
+				shortName = "D.Up";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"crew"};
+				mountedRadio = "ACRE_PRC117F";
+				isRadioRemovable = 0;
+			};
+			class Rack_2: Rack_1 {
+				displayName = "Dashboard Lower";
+				shortName = "D.Low";
+			};
+		};
+	};
+	class Heli_Transport_02_base_F: Helicopter_Base_H {};
+	class RHS_CH_47F_base: Heli_Transport_02_base_F {
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Dashboard Upper";
+				shortName = "D.Up";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"crew"};
+				mountedRadio = "ACRE_PRC117F";
+				isRadioRemovable = 0;
+			};
+			class Rack_2: Rack_1 {
+				displayName = "Dashboard Lower";
+				shortName = "D.Low";
+			};
+		};		
 	};
 };

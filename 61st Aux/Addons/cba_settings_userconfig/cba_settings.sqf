@@ -598,3 +598,33 @@ zen_vision_enableRedGreenThermal = false;
 zen_vision_enableRedHotCold = false;
 zen_vision_enableWhiteHot = true;
 zen_vision_enableWhiteHotRedCold = false;
+
+// ACRE2
+acre_sys_core_automaticAntennaDirection = false;
+force acre_sys_core_defaultRadioVolume = 0.6;
+force acre_sys_core_fullDuplex = true;
+acre_sys_core_ignoreAntennaDirection = false;
+acre_sys_core_interference = true;
+acre_sys_core_postmixGlobalVolume = 1;
+acre_sys_core_premixGlobalVolume = 1;
+force acre_sys_core_revealToAI = 1.75;
+acre_sys_core_spectatorVolume = 1;
+acre_sys_core_terrainLoss = 1;
+acre_sys_core_ts3ChannelName = "";
+acre_sys_core_ts3ChannelPassword = "";
+acre_sys_core_ts3ChannelSwitch = true;
+acre_sys_core_unmuteClients = true;
+acre_sys_signal_signalModel = 2;
+
+// ACRE2 UI
+acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
+acre_sys_list_CycleRadiosColor = [0.66,0.05,1,1];
+acre_sys_list_DefaultPTTColor = [1,0.8,0,1];
+acre_sys_list_HintBackgroundColor = [0,0,0,0.8];
+acre_sys_list_HintTextFont = "RobotoCondensed";
+acre_sys_list_LanguageColor = [1,0.29,0.16,1];
+acre_sys_list_PTT1Color = [1,0.8,0,1];
+acre_sys_list_PTT2Color = [1,0.8,0,1];
+acre_sys_list_PTT3Color = [1,0.8,0,1];
+acre_sys_list_SwitchChannelColor = [0.66,0.05,1,1];
+acre_sys_list_ToggleHeadsetColor = [0.66,0.05,1,1];
