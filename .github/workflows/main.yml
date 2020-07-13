@@ -23,5 +23,5 @@ jobs:
       run: python tools/sqf_validator.py
     - name: Config Style Checker
       run: python tools/config_style_checker.py
-    - name: SQFLint
-      run: python tools/sqf-master/sqflint.py -d "addons" -e e"
+    # - name: SQFLint
+    #   run: python tools/sqf-master/sqflint.py -d "addons" -e e"
