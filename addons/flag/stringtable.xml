@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Package name="61st Aux">
+    <Container name="flag">
+      <Key ID="STR_61st_flag_display">
+        <Original>Flag (61st Cavalry Regiment)</Original>
+        <English>Flag (61st Cavalry Regiment)</English>
+        <Czech>Flag (61st Cavalry Regiment)</Czech>
+        <French>Flag (61st Cavalry Regiment)</French>
+        <Spanish>Flag (61st Cavalry Regiment)</Spanish>
+        <Italian>Flag (61st Cavalry Regiment)</Italian>
+        <Polish>Flag (61st Cavalry Regiment)</Polish>
+        <Portuguese>Flag (61st Cavalry Regiment)</Portuguese>
+        <Russian>Flag (61st Cavalry Regiment)</Russian>
+        <German>Flag (61st Cavalry Regiment)</German>
+      </Key>
+      <Key ID="STR_61st_flag_displayYellow">
+        <Original>Flag (61st Cavalry Regiment Yellow)</Original>
+        <English>Flag (61st Cavalry Regiment Yellow)</English>
+        <Czech>Flag (61st Cavalry Regiment Yellow)</Czech>
+        <French>Flag (61st Cavalry Regiment Yellow)</French>
+        <Spanish>Flag (61st Cavalry Regiment Yellow)</Spanish>
+        <Italian>Flag (61st Cavalry Regiment Yellow)</Italian>
+        <Polish>Flag (61st Cavalry Regiment Yellow)</Polish>
+        <Portuguese>Flag (61st Cavalry Regiment Yellow)</Portuguese>
+        <Russian>Flag (61st Cavalry Regiment Yellow)</Russian>
+        <German>Flag (61st Cavalry Regiment Yellow)</German>
+      </Key>
+    </Container>
+  </Package>
+</Project>
