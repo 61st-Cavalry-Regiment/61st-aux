@@ -13,3 +13,20 @@ class CfgPatches {
 };
 #include "CfgSettings.hpp"
 #include "CfgWeapons.hpp"
+enableDebugConsole = 1;
+
+class CfgFactionClasses {
+    class 61st_Aux {
+        displayName = "61st Aux Mod";
+        priority = 3;
+        side = 1;
+    };
+};
+
+class CfgEditorCategories {
+    class 61st_Aux {
+        displayName = "61st Aux Mod";
+        priority = 3;
+        side = 1;
+    };
+};

@@ -3,10 +3,10 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
-        units[] = {"RHS_UH60M", QGVAR(UH60m_DAP)};
+        units[] = {"RHS_UH60M", QGVAR(UH60m_DAP), QGVAR(3R), QGVAR(MELB_MH6M), QGVAR(MELB_AH6M), QGVAR(AH64D_wd), QGVAR(CH_47F), QGVAR(UH60M)};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {"RHS_US_A2_AirImport"};
         author = "AUTHOR";
         VERSION_CONFIG;
     };

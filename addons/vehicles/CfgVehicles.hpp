@@ -1,4 +1,5 @@
 class CfgVehicles {
+	//Helicopters
 	class Helicopter {
 		class ACE_SelfActions;
 	};
@@ -3519,6 +3520,8 @@ class CfgVehicles {
 			};
 		};
 		defaultUserMFDvalues[] = {0,0,0,0,1,0,0.2};
+		lockDetectionSystem = 16;
+		incomingMissileDetectionSystem = 16;
 		// statement = "this SetUserMFDvalue [3,1];this SetUserMFDvalue [4,0.65];this SetUserMFDvalue [5,0];"; To change color
 		class ACE_SelfActions: ACE_SelfActions {
 			class HMD {
@@ -3556,9 +3559,26 @@ class CfgVehicles {
 					};
 				};
 			};
+			class skin {
+				displayName = "Nose Art";
+				condition = "driver (vehicle _player) == _player";
+				statement = "";
+				class default {
+					displayName = "None";
+					condition = "";
+					statement = "_target setObjectTextureGlobal [0, 'rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_fuselage_co.paa']; _target setObjectTextureGlobal [1, 'rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_engine_co.paa']";
+				};
+				// noseArt(uhFG1.paa, uhEG1.paa, test, Test)
+				noseArt(P11F.paa, P11E.paa, p11, Pheonix 1-1)
+				noseArt(P12F.paa, E.paa, p12, Pheonix 1-2)
+				noseArt(P13F.paa, E.paa, p13, Pheonix 1-3)
+				noseArt(P14F.paa, E.paa, p14, Pheonix 1-4)
+
+			};
 		};
 		class Components;
 	};
+	faction(UH60M, RHS_UH60M)
 	class RHS_UH60M2: RHS_UH60M {
 	};
 	class RHS_UH60M_ESSS: RHS_UH60M2 {
@@ -3566,9 +3586,11 @@ class CfgVehicles {
 			class TransportPylonsComponent;
 		};
 	};
+	faction(UH60M_ESSS, RHS_UH60M_ESSS)
 	class GVAR(UH60M_DAP): RHS_UH60M_ESSS {
 		displayName = CSTRING(dap);
 		scope = public;
+		faction = "61st_Aux";
 		class pilotCamera
         {
             class OpticsIn
@@ -3640,10 +3662,16 @@ class CfgVehicles {
 			};
 		};
         memoryPointDriverOptics = "slingload0";
-		weapons[] += {"Laserdesignator_pilotCamera"};
-		magazines[] += {"Laserbatteries"};
-
-
+		weapons[] =
+		{
+			"rhsusf_weap_ANALQ144",
+			"Laserdesignator_pilotCamera"
+		};
+		magazines[] =
+		{
+			mag_10(rhsusf_mag_DIRCM),
+			"Laserbatteries"
+		};
 	};
 	class Heli_Attack_01_base_F: Helicopter_Base_F {};
 	class RHS_AH64_base: Heli_Attack_01_base_F {
@@ -3678,5 +3706,41 @@ class CfgVehicles {
 				shortName = "D.Low";
 			};
 		};		
+	};
+	class RHS_MELB_MH6M;
+	faction(MELB_MH6M, RHS_MELB_MH6M)
+	class RHS_MELB_AH6M;
+	faction(MELB_AH6M, RHS_MELB_AH6M)
+	class RHS_AH64D_wd;
+	faction(AH64D_wd, RHS_AH64D_wd)
+	class RHS_CH_47F;
+	faction(CH_47F, RHS_CH_47F)
+
+	//Ground
+	class MRAP_01_base_F;
+	class rhsusf_MATV_base: MRAP_01_base_F {
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Dashboard Upper";
+				shortName = "D.Up";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"crew"};
+				mountedRadio = "ACRE_PRC117F";
+				isRadioRemovable = 0;
+			};
+			class Rack_2: Rack_1 {
+				displayName = "Dashboard Lower";
+				shortName = "D.Low";
+			};
+		};
+	};
+	class rhsusf_M977A4_REPAIR_usarmy_d;
+	class GVAR(3R): rhsusf_M977A4_REPAIR_usarmy_d {
+		displayName = "3R";
+		faction = "61st_Aux";
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_fuelCapacity = 583;
+		ace_refuel_flowRate = 2;
+		ace_rearm_defaultSupply = 1200;
 	};
 };

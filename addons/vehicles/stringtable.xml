@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <Package name="61st Aux">
-    <Container name="helicopter">
-      <Key ID="STR_61st_helicopter_dap">
+    <Container name="vehicles">
+      <Key ID="STR_61st_vehicles_dap">
         <Original>UH-60M (DAP)</Original>
         <English>UH-60M (DAP)</English>
         <Czech>UH-60M (DAP)</Czech>
