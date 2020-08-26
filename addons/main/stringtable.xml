@@ -2,7 +2,7 @@
 <Project>
   <Package name="61st Aux">
     <Container name="main">
-      <Key ID="STR_61st_main_Author">
+      <Key ID="STR_Aux61st_main_Author">
         <Original>61st Cavalry Regiment</Original>
         <English>61st Cavalry Regiment</English>
         <Czech>61st Cavalry Regiment</Czech>

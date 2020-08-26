@@ -21,6 +21,11 @@
 #define protected 1
 #define public 2
 
+//Sorting
+#define EditorCat editorCategory = "61st_Aux";
+#define supplies editorSubcategory = "61st_Aux_supplies";
+#define fac faction = "61st_Aux";
+
 // weapon types
 #define TYPE_WEAPON_PRIMARY 1
 #define TYPE_WEAPON_HANDGUN 2
@@ -65,4 +70,11 @@
 #else
     #undef PREP
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
+#endif
+#ifdef DISABLE_COMPILE_CACHE
+    #undef PREPO
+    #define PREPO(location,fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\location\DOUBLES(fnc,fncName).sqf)
+#else
+    #undef PREPO
+    #define PREPO(location,fncName) [QPATHTOF(functions\location\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif

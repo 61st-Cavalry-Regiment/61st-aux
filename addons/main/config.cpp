@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
         units[] = {};
-        weapons[] = {GVAR(invisible_nvg_ti)};
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {};
         author = "AUTHOR";
@@ -12,7 +12,6 @@ class CfgPatches {
     };
 };
 #include "CfgSettings.hpp"
-#include "CfgWeapons.hpp"
 enableDebugConsole = 1;
 
 class CfgFactionClasses {
@@ -26,7 +25,11 @@ class CfgFactionClasses {
 class CfgEditorCategories {
     class 61st_Aux {
         displayName = "61st Aux Mod";
-        priority = 3;
-        side = 1;
+    };
+};
+
+class CfgEditorSubcategories {
+    class 61st_Aux_supplies {
+        displayName = "Supplies";
     };
 };

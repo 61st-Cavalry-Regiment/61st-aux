@@ -4,15 +4,15 @@ class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
         units[] = {};
-        weapons[] = {QGVAR(seemjer), QGVAR(rainbow)};
+        weapons[] = {QGVAR(seemjer), QGVAR(rainbow), QGVAR(craft), QGVAR(muffins), QGVAR(thunder), QGVAR(invisible_nvg_ti)};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {QUOTE(MAIN_ADDON)};
         author = "AUTHOR";
         VERSION_CONFIG;
     };
 };
 
-
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
+#include "Cfg3DEN.hpp"

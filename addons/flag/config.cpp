@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {QGVAR(Flag), QGVAR(FlagYellow)};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"61st_main", "A3_Structures_F_Mil_Flags"};
+        requiredAddons[] = {QUOTE(MAIN_ADDON), "A3_Structures_F_Mil_Flags"};
         author = "AUTHOR";
         VERSION_CONFIG;
     };

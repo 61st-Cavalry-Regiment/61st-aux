@@ -2,7 +2,7 @@
 <Project>
   <Package name="61st Aux">
     <Container name="flag">
-      <Key ID="STR_61st_flag_display">
+      <Key ID="STR_Aux61st_flag_display">
         <Original>Flag (61st Cavalry Regiment)</Original>
         <English>Flag (61st Cavalry Regiment)</English>
         <Czech>Flag (61st Cavalry Regiment)</Czech>
@@ -14,7 +14,7 @@
         <Russian>Flag (61st Cavalry Regiment)</Russian>
         <German>Flag (61st Cavalry Regiment)</German>
       </Key>
-      <Key ID="STR_61st_flag_displayYellow">
+      <Key ID="STR_Aux61st_flag_displayYellow">
         <Original>Flag (61st Cavalry Regiment Yellow)</Original>
         <English>Flag (61st Cavalry Regiment Yellow)</English>
         <Czech>Flag (61st Cavalry Regiment Yellow)</Czech>

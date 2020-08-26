@@ -1,0 +1,13 @@
+PREP(arsenal);
+PREP(loadouts);
+PREPO(loadouts,ar);
+PREPO(loadouts,at);
+PREPO(loadouts,grenadier);
+PREPO(loadouts,helipilot);
+PREPO(loadouts,jetpilot);
+PREPO(loadouts,marksman);
+PREPO(loadouts,medic);
+PREPO(loadouts,rifleman);
+PREPO(loadouts,rto);
+PREPO(loadouts,squadleader);
+PREPO(loadouts,teamleader);

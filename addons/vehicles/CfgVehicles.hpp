@@ -3523,59 +3523,7 @@ class CfgVehicles {
 		lockDetectionSystem = 16;
 		incomingMissileDetectionSystem = 16;
 		// statement = "this SetUserMFDvalue [3,1];this SetUserMFDvalue [4,0.65];this SetUserMFDvalue [5,0];"; To change color
-		class ACE_SelfActions: ACE_SelfActions {
-			class HMD {
-				displayName = "HMD";
-				condition = "(player in [driver this, this turretUnit [0]]) && (alive this)";
-				exceptions[] = {};
-				statement = "";
-				icon = "";
-				class ON {
-					displayName = "HMD ON";
-					condition = "(player in [driver this, this turretUnit [0]]) && (alive this)";
-					icon = "";
-					statement = "_target SetUserMFDvalue [0,1]";
-				};
-				class OFF: ON {
-					displayName = "HMD OFF";
-					statement = "_target SetUserMFDvalue [0,0]";
-				};
-				class OPACITY {
-					displayName = "OPACITY";
-					condition = "(player in [driver this, this turretUnit [0]]) && (alive this)";
-					icon = "";
-					statement = "";
-					class HIGH {
-						displayName = "High";
-						statement = "_target SetUserMFDvalue [6,.5]";
-					};
-					class MED {
-						displayName = "Med";
-						statement = "_target SetUserMFDvalue [6,.2]";
-					};
-					class LOW {
-						displayName = "Low";
-						statement = "_target SetUserMFDvalue [6,0.05]";
-					};
-				};
-			};
-			class skin {
-				displayName = "Nose Art";
-				condition = "driver (vehicle _player) == _player";
-				statement = "";
-				class default {
-					displayName = "None";
-					condition = "";
-					statement = "_target setObjectTextureGlobal [0, 'rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_fuselage_co.paa']; _target setObjectTextureGlobal [1, 'rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_engine_co.paa']";
-				};
-				// noseArt(uhFG1.paa, uhEG1.paa, test, Test)
-				noseArt(P11F.paa, P11E.paa, p11, Pheonix 1-1)
-				noseArt(P12F.paa, E.paa, p12, Pheonix 1-2)
-				noseArt(P13F.paa, E.paa, p13, Pheonix 1-3)
-				noseArt(P14F.paa, E.paa, p14, Pheonix 1-4)
-
-			};
-		};
+		#include "UH60AceActions.hpp"
 		class Components;
 	};
 	faction(UH60M, RHS_UH60M)

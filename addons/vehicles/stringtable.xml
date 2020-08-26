@@ -2,7 +2,7 @@
 <Project>
   <Package name="61st Aux">
     <Container name="vehicles">
-      <Key ID="STR_61st_vehicles_dap">
+      <Key ID="STR_Aux61st_vehicles_dap">
         <Original>UH-60M (DAP)</Original>
         <English>UH-60M (DAP)</English>
         <Czech>UH-60M (DAP)</Czech>

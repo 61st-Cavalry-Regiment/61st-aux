@@ -1,0 +1,38 @@
+{
+    "medical": {
+        "ACE_Adenosine":15,
+        "ACE_fieldDressing": 25,
+        "ACE_elasticBandage": 25,
+        "ACE_packingBandage": 25,
+        "ACE_quikclot": 20,
+        "ACE_bloodIV": 7,
+        "ACE_bloodIV_250": 7,
+        "ACE_bloodIV_500": 7,
+        "ACE_bodyBag": 5,
+        "ACE_epinephrine": 15,
+        "ACE_morphine": 15,
+        "ACE_plasmaIV": 10,
+        "ACE_plasmaIV_250": 10,
+        "ACE_plasmaIV_500": 10,
+        "ACE_splint": 15,
+        "ACE_surgicalKit": 2,
+        "ACE_tourniquet": 15
+    },
+    "ammo": {
+        "rhsusf_100Rnd_556x45_M855_mixed_soft_pouch": 15,
+        "rhsusf_20Rnd_762x51_SR25_m993_Mag": 10,
+        "rhs_mag_30Rnd_556x45_M855_Stanag": 30,
+        "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red": 10
+    },
+    "launchers":{
+        "rhs_mag_M433_HEDP": 10,
+        "rhs_mag_M441_HE": 10,
+        "rhs_mag_M713_Red": 5,
+        "rhs_mag_M714_White": 5,
+        "rhs_mag_M715_Green": 5,
+        "rhs_mag_M716_Yellow": 5,
+        "rhs_mag_smaw_SR": 5,
+        "rhs_mag_smaw_HEAA": 5
+        
+    }
+}
