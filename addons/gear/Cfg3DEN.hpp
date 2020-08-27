@@ -18,9 +18,23 @@ class CFG3DEN {
                         displayName = "Add Loadouts";
                         tooltip = "Add loadouts options to the scroll wheel.";
                         property = QGVAR(loadouts);
-                        control = "Checkbox";
-                        expression = QUOTE(if (_value) then {_this call FUNC(loadouts)};);
-                        defaultValue = "false";
+                        control = "Combo";
+                        expression = QUOTE([ARR_2(_this, _value)] call FUNC(loadouts););
+                        defaultValue = 0;
+                        class Values {
+                            class None {
+                                name = "None";
+                                value = 0;
+                            };
+                            class Desert {
+                                name = "Desert";
+                                value = 1;
+                            };
+                            class Woodland {
+                                name = "Woodland";
+                                value = 2;
+                            };
+                        };
                         condition = "1 - objectControllable";
                     };
                 };
