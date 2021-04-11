@@ -1,5 +1,6 @@
 PREP(arsenal);
 PREP(loadouts);
+PREP(loadout);
 PREPO(loadouts\desert,ar_d);
 PREPO(loadouts\desert,at_d);
 PREPO(loadouts\desert,grenadier_d);

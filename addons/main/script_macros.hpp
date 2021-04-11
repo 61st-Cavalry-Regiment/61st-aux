@@ -15,6 +15,7 @@
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define backpack_xx(a,b) class __xx_##a {backpack = a; count = b;}
 
 //scopes
 #define private 0
@@ -22,8 +23,7 @@
 #define public 2
 
 //Sorting
-#define EditorCat editorCategory = "61st_Aux";
-#define supplies editorSubcategory = "61st_Aux_supplies";
+#define EdCat editorCategory = "EdCat_61st";
 #define fac faction = "61st_Aux";
 
 // weapon types

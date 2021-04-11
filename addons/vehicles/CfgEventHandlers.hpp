@@ -20,6 +20,11 @@ class Extended_InitPost_EventHandlers {
             excludes = QGVAR(UH60M_DAP)
         };
     };
+    class GVAR(UAV) {
+        class GVAR(side) {
+            init = QUOTE(call COMPILE_FILE(XEH_UAVInitPost));
+        }
+    }
 };
 class Extended_GetIn_EventHandlers {
     class RHS_UH60M {

@@ -31,8 +31,8 @@ class CFG3DEN {
                                 value = 1;
                             };
                             class Woodland {
-                                name = "Woodland";
-                                value = 2;
+                                name = "Woodland NIP";
+                                value = 0;
                             };
                         };
                         condition = "1 - objectControllable";

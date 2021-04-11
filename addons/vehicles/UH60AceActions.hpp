@@ -2,7 +2,6 @@ class ACE_SelfActions: ACE_SelfActions {
 	class HMDOn {
 		displayName = "HMD";
 		condition = "(player in [driver this, this turretUnit [0]]) && (alive this)";
-		exceptions[] = {};
 		statement = QUOTE(call FUNC(toggleHMD));
 		icon = "";
 	};

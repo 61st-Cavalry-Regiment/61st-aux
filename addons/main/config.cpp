@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = QUOTE(COMPONENT);
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -20,16 +20,27 @@ class CfgFactionClasses {
         priority = 3;
         side = 1;
     };
+    class 61st_Aux_Empty {
+        displayName = "61st Aux Mod";
+        priority = 3;
+        side = 1;
+    };
 };
 
 class CfgEditorCategories {
-    class 61st_Aux {
+    class EdCat_61st_Main {
         displayName = "61st Aux Mod";
+    };
+
+    class EdCat_61st_Supplies{
+        displayName = "61st Supplies";
     };
 };
 
 class CfgEditorSubcategories {
-    class 61st_Aux_supplies {
-        displayName = "Supplies";
+    class EdSubcat_61st_resupply {
+        displayName = "Resupply";
     };
 };
+
+

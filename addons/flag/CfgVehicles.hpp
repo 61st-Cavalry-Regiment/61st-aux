@@ -3,7 +3,9 @@ class CfgVehicles {
 	class GVAR(Flag): Flag_White_F {
 		author = ECSTRING(main, author);
 		displayName = CSTRING(display);
-		EditorCat
+		scopecurator = public;
+		scope = public;
+		editorCategory = "EdCat_61st_Main";
 		class EventHandlers {
 			init = QUOTE((_this select 0) setFlagTexture QUOTE(QPATHTOF(data\61stFlag.paa)));
 		};
