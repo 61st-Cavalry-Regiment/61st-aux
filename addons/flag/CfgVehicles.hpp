@@ -5,7 +5,6 @@ class CfgVehicles {
 		displayName = CSTRING(display);
 		scopecurator = public;
 		scope = public;
-		editorCategory = "EdCat_61st_Main";
 		class EventHandlers {
 			init = QUOTE((_this select 0) setFlagTexture QUOTE(QPATHTOF(data\61stFlag.paa)));
 		};
@@ -13,7 +12,7 @@ class CfgVehicles {
 	class GVAR(FlagYellow): GVAR(Flag){
 		displayName = CSTRING(displayYellow);
 		class EventHandlers {
-			init = QUOTE((_this select 0) setFlagTexture QUOTE(QPATHTOF(data\61stFlagY.paa)))
-		}
-	}
+			init = QUOTE((_this select 0) setFlagTexture QUOTE(QPATHTOF(data\61stFlagY.paa)));
+		};
+	};
 };
