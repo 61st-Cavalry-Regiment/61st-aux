@@ -44,6 +44,11 @@ class CfgVehicles {
 		}
 	};
 	faction(UH60M, RHS_UH60M)
+	class GVAR(pinkhawk): RHS_UH60M {
+		displayName = "UH-60M (Pinkhawk)";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\textures\uh60\HobbF.paa), QPATHTOF(data\textures\uh60\HobbE.paa)};
+		faction = "61st_Aux";
+	};
 	class RHS_UH60M2: RHS_UH60M {
 	};
 	class RHS_UH60M_ESSS: RHS_UH60M2 {
