@@ -1,13 +1,21 @@
 class CfgVehicles {
+
+	//Imports
 	class Man;
+	class ACE_morphineItem;
+	class Box_NATO_Ammo_F;
+	class Box_NATO_WpsLaunch_F;
+	class Box_NATO_Equip_F;
+	class rhsgref_hidf_alicepack;
+
 	class CAManBase: Man {
 		#include "aceActions.hpp"
 	};
-	class Box_NATO_Ammo_F;
 	class GVAR(ammoBox): Box_NATO_Ammo_F {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Ammo Box [61st]";
+		DISPLAYNAME(Ammo Box)
+		author = ECSTRING(main, AuthorShort);
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		class TransportMagazines {
@@ -25,11 +33,11 @@ class CfgVehicles {
 			// mag_xx(rhs_mag_smaw_HEAA, 5);
 		};
 	};
-	class Box_NATO_WpsLaunch_F;
 	class GVAR(launcherBox): Box_NATO_WpsLaunch_F {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Launcher Box [61st]";
+		DISPLAYNAME(Launcher Box)
+		author = ECSTRING(main, AuthorShort);
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		class TransportMagazines {
@@ -43,11 +51,11 @@ class CfgVehicles {
 			weap_xx(rhs_weap_M136_hp, 1);
 		};
 	};
-	class Box_NATO_Equip_F;
 	class GVAR(medicalBox): Box_NATO_Equip_F {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Medical Box [61st]";
+		DISPLAYNAME(Medical Box)
+		author = ECSTRING(main, AuthorShort);
 		hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_co.paa",QPATHTOF(data\textures\medical_Box2.paa)};
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
@@ -70,5 +78,47 @@ class CfgVehicles {
 			item_xx(ACE_surgicalKit, 2);
 			item_xx(ACE_tourniquet, 15);
 		};
+	};
+	class GVAR(alicepack): rhsgref_hidf_alicepack {
+		DISPLAYNAME(alicepack)
+		hiddenSelectionsTextures[] = {QPATHTOF(data\textures\alicepack_co.paa)};
+	};
+
+	class GVAR(IbuprofenItem):ACE_morphineItem {
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		DISPLAYNAME(Ibuprofen)
+		author = ECSTRING(main, AuthorShort);
+		vehicleClass = "Items";
+		class TransportItems {
+			item_xx(GVAR(Ibuprofen), 1);
+		};
+		mass = 20;
+	};
+
+	class tfw_ilbe_a_coy;
+	class GVAR(Zeus_Pack):tfw_ilbe_a_coy {
+		DISPLAYNAME(Zeus LR)
+		tf_range = 120000;
+		maximumLoad = 1000;
+	};
+	class B_Kitbag_rgr;
+	class GVAR(Zeus_Pack_Invisible):B_Kitbag_rgr {
+		DISPLAYNAME(Zeus LR (Invisible))
+		model = QPATHTOF(data\radio.p3d);
+		mass = 0;
+		tf_dialogUpdate = QUOTE(call TFAR_fnc_updateLRDialogToChannel;);
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 120000;
+		maximumLoad = 1000;
+	};
+	class tfar_inviisble_radio: GVAR(Zeus_Pack_Invisible){
+		scopeArsenal = protected;
+		scpoe = protected;
+		scopeCurator = protected;
 	};
 };

@@ -45,6 +45,7 @@ class CfgVehicles {
 	};
 	faction(UH60M, RHS_UH60M)
 	class GVAR(pinkhawk): RHS_UH60M {
+		scpoe = private;
 		displayName = "UH-60M (Pinkhawk)";
 		hiddenSelectionsTextures[] = {QPATHTOF(data\textures\uh60\HobbF.paa), QPATHTOF(data\textures\uh60\HobbE.paa)};
 		faction = "61st_Aux";
@@ -58,7 +59,7 @@ class CfgVehicles {
 	};
 	faction(UH60M_ESSS, RHS_UH60M_ESSS)
 	class GVAR(UH60M_DAP): RHS_UH60M_ESSS {
-		displayName = CSTRING(dap);
+		DISPLAYNAME(UH-60M (DAP))
 		scope = public;
 		scopecurator = public;
 		faction = "61st_Aux";
@@ -144,10 +145,6 @@ class CfgVehicles {
 			"Laserbatteries"
 		};
 	};
-	class Heli_Attack_01_base_F: Helicopter_Base_F {};
-	class RHS_AH64_base: Heli_Attack_01_base_F {
-		
-	};
 	class Heli_Transport_02_base_F: Helicopter_Base_H {};
 	class RHS_MELB_MH6M;
 	faction(MELB_MH6M, RHS_MELB_MH6M)
@@ -161,9 +158,12 @@ class CfgVehicles {
 	faction(UAV, B_UAV_02_dynamicLoadout_F)
 
 	//Ground
-	class rhsusf_M977A4_REPAIR_usarmy_d;
+	class rhsusf_M977A4_REPAIR_usarmy_wd;
+	class rhsusf_M977A4_REPAIR_usarmy_d: rhsusf_M977A4_REPAIR_usarmy_wd{
+		class complexGearbox;
+	};
 	class GVAR(3R): rhsusf_M977A4_REPAIR_usarmy_d {
-		displayName = "3R";
+		DISPLAYNAME(3R)
 		faction = "61st_Aux";
 		scope = public;
 		scopecurator = public;
@@ -171,5 +171,44 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 583;
 		ace_refuel_flowRate = 2;
 		ace_rearm_defaultSupply = 1200;
+		class complexGearbox: complexGearbox {
+			GearboxRatios[] = {
+				"R1",	-3.231,
+				"N",	 0,
+				"D1",	 2.462,
+				"D2",	 1.870,
+				"D3",	 1.241,
+				"D4",	 0.970,
+				"D5",	 0.711
+			};
+		};
+	};
+
+	class RHS_M2A2;
+	class RHS_M2A3: RHS_M2A2 {
+		class Turrets;
+	};
+	class RHS_M2A3_BUSKI: RHS_M2A3 {
+		class Turrets: Turrets {
+			class MainTurret;
+		};
+	};
+	class RHS_M2A3_BUSKIII: RHS_M2A3_BUSKI{
+		transportSoldier = 9;
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				magazines[] = {
+					mag_2(rhs_mag_1100Rnd_762x51_M240),
+					mag_2(rhs_mag_230Rnd_25mm_M242_HEI),
+					mag_6(rhs_mag_70Rnd_25mm_M242_APFSDS),
+					mag_3(rhs_mag_2Rnd_TOW2A),
+					"rhs_mag_2Rnd_TOW2BB",
+					"rhs_laserfcsmag"
+				};
+				//["rhs_mag_1100Rnd_762x51_M240","rhs_mag_1100Rnd_762x51_M240","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_70Rnd_25mm_M242_APFSDS","rhs_mag_70Rnd_25mm_M242_APFSDS","rhs_mag_70Rnd_25mm_M242_APFSDS","rhs_mag_2Rnd_TOW2B_AERO","rhs_mag_2Rnd_TOW2B_AERO","rhs_mag_2Rnd_TOW2A","rhs_mag_2Rnd_TOW2BB","rhs_laserfcsmag"]
+				weapons[] = {"RHS_weap_M242BC","rhs_weap_m240_bradley_coax","Rhs_weap_TOW_Launcher","rhs_weap_fcs_ammo"};
+				//["RHS_weap_M242BC","rhs_weap_m240_bradley_coax","Rhs_weap_TOW_Launcher","rhs_weap_fcs_ammo"]
+			};
+		};
 	};
 };

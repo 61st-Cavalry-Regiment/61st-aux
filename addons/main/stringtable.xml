@@ -5,14 +5,10 @@
       <Key ID="STR_Aux61st_main_Author">
         <Original>61st Cavalry Regiment</Original>
         <English>61st Cavalry Regiment</English>
-        <Czech>61st Cavalry Regiment</Czech>
-        <French>61st Cavalry Regiment</French>
-        <Spanish>61st Cavalry Regiment</Spanish>
-        <Italian>61st Cavalry Regiment</Italian>
-        <Polish>61st Cavalry Regiment</Polish>
-        <Portuguese>61st Cavalry Regiment</Portuguese>
-        <Russian>61st Cavalry Regiment</Russian>
-        <German>61st Cavalry Regiment</German>
+      </Key>
+      <Key ID="STR_Aux61st_main_AuthorShort">
+        <Original>61st Aux</Original>
+        <English>61st Aux</English>
       </Key>
     </Container>
   </Package>

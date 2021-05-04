@@ -17,6 +17,8 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define backpack_xx(a,b) class __xx_##a {backpack = a; count = b;}
 
+#define DISPLAYNAME(a) displayName = [61st] a;
+
 //scopes
 #define private 0
 #define protected 1

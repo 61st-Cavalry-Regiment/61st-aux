@@ -11,4 +11,6 @@ ADDON = false;
 // ["ACRE_PRC117F", "default", 2, "name", "CASNET 1"] call acre_api_fnc_setPresetChannelField;
 // ["ACRE_PRC117F", "default", 3, "name", "A2A"] call acre_api_fnc_setPresetChannelField;
 // ["ACRE_PRC117F", "default", 4, "name", "A2A 2"] call acre_api_fnc_setPresetChannelField;
+ACE_maxWeightCarry = 1200;
+ACE_maxWeightDrag = 1200;
 ADDON = true;
