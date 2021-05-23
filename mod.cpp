@@ -1,4 +1,4 @@
-name        = "61st Auxilary Mod V000";
+name        = "61st Auxilary Mod V00.0";
 author      = "61st Auxilary Mod Team";
 picture     = "\z\Aux61st\addons\main\data\textures\61st.paa";
 logosmall   = "\z\Aux61st\addons\main\data\textures\61st.paa";

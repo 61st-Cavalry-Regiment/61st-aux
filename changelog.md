@@ -16,3 +16,11 @@ Add Zeus LR Pack (Visible/Invisible variants)
 Give Hobnob his pink tail
 Increase carry limit
 Remove Stamina
+
+## V11
+
+Added Helmets
+    Sam
+    Myers
+    ACH
+Add PJ's nose art

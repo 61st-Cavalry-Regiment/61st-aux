@@ -15,7 +15,7 @@ class Extended_PreInit_EventHandlers {
 	{
 		init = "";
 	};
-    RS_Init = QUOTE(RS_Init_Var = [] execVM QPATHTOF(init.sqf));
+    RS_Init = QUOTE(RS_Init_Var = [] execVM 'PATHTOF(init.sqf)');
 };
 class Extended_PostInit_EventHandlers {
     class ADDON {
