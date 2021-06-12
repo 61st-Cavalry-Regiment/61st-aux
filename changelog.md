@@ -24,3 +24,15 @@ Added Helmets
     Myers
     ACH
 Add PJ's nose art
+
+## V12
+
+Update Helmets
+	ACH
+Add New Helmet Textures
+	UCP
+	M81
+Add Long Range Radio Backpacks
+	Falcon-11
+	Carryall
+	Kitbag

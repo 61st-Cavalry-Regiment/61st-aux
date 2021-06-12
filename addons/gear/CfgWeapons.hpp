@@ -24,7 +24,7 @@ class CfgWeapons {
     class GVAR(rainbow_visor):rhsusf_hgu56p_visor {scope = protected; displayName = HGU-56/P (Rainbow/Visor); hiddenSelectionsTextures[] = {QPATHTOF(data\textures\hgu56\HGU56_Gradient.paa), QPATHTOF(data\textures\hgu56\HGU56_Patches_Gradient.paa)};};\
     class GVAR(rainbow_mask):rhsusf_hgu56p_mask {scope = protected; displayName = HGU-56/P (Rainbow/Mask); hiddenSelectionsTextures[] = {QPATHTOF(data\textures\hgu56\HGU56_Gradient.paa), QPATHTOF(data\textures\hgu56\HGU56_Patches_Gradient.paa)};};\
     class GVAR(rainbow_visor_mask):rhsusf_hgu56p_visor_mask {scope = protected; displayName = HGU-56/P (Rainbow/Visor/Mask); hiddenSelectionsTextures[] = {QPATHTOF(data\textures\hgu56\HGU56_Gradient.paa), QPATHTOF(data\textures\hgu56\HGU56_Patches_Gradient.paa)};};
-
+	
 
 	class GVAR(invisible_nvg_ti): Integrated_NVG_TI_0_F {
 		scope = public;
@@ -39,10 +39,14 @@ class CfgWeapons {
 			mass = 4;
 		};
 	};
-
-	ACH(ACH, data\textures\61st_rhs_helmet_ach_ocp_co.paa, ach)
-	ACH(Myers, data\textures\Myers.paa, myers)
+	//ACH Helmets
+	ACH(ACH, data\textures\ACH Helmets\61st_rhs_helmet_ach_ocp_co.paa, ach)
+	ACH(Myers, data\textures\ACH Helmets\61st_Myers_rhs_helmet_ach_ocp_co.paa, myers)
+	ACH(DCU, data\textures\ACH Helmets\61st_rhs_helmet_ach_DCU_early_co.paa, dcu)
+	ACH(M81, data\textures\ACH Helmets\61st_rhs_helmet_ach_M81_co.paa, m81)
+	ACH(UCP, data\textures\ACH Helmets\61st_rhs_helmet_ach_ucp_co.paa, ucp)
 	
+
 
 	class GVAR(Ibuprofen):ACE_Morphine {
 		scope = 2;

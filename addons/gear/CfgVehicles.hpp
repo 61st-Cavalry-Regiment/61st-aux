@@ -121,4 +121,40 @@ class CfgVehicles {
 		scpoe = protected;
 		scopeCurator = protected;
 	};
+	class B_Kitbag_mcamo;	
+	class GVAR(kitbag_lr):B_Kitbag_mcamo {
+		DISPLAYNAME(Kitbag LR)
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class B_Carryall_mcamo;	
+	class GVAR(carryall_lr):B_Carryall_mcamo {
+		DISPLAYNAME(Carryall LR)
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class rhsusf_assault_eagleiii_ocp;	
+	class GVAR(eagleiii_lr):rhsusf_assault_eagleiii_ocp {
+		DISPLAYNAME(Eagle III LR)
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class rhsusf_falconii_mc;	
+	class GVAR(falconii_lr):rhsusf_falconii_mc {
+		DISPLAYNAME(Falcon-II LR)
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
 };
