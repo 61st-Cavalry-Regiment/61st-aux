@@ -38,12 +38,12 @@ show_output = true
 [scripts.version_unset]
 steps_linux = [
     "echo 'Unsetting version'",
-    "sed -i -r -s 's/{{semver.major}}{{semver.minor}}.{{semver.patch}}/00.0/g' mod.cpp",
+    "sed -i -r -s 's/{{semver.major}}.{{semver.minor}}.{{semver.patch}}/0.0.0/g' mod.cpp",
     "sed -i -r -s 's/#define BUILD {{date \"%y%m%d\"}}/#define BUILD 000000/g' addons/main/script_version.hpp",
 ]
 steps_windows = [
     "echo Unsetting version",
-    "powershell -Command foreach ($f in 'mod.cpp') {(Get-Content $f) -replace '{{semver.major}}{{semver.minor}}.{{semver.patch}}', '00.0' -join \"`n\" ^| Set-Content -NoNewline $f; Add-Content -NoNewline \"`n\" $f}",
+    "powershell -Command foreach ($f in 'mod.cpp') {(Get-Content $f) -replace '{{semver.major}}.{{semver.minor}}.{{semver.patch}}', '0.0.0' -join \"`n\" ^| Set-Content -NoNewline $f; Add-Content -NoNewline \"`n\" $f}",
     "powershell -Command foreach ($f in 'addons/main/script_version.hpp') {(Get-Content $f) -replace '#define BUILD {{date \"%y%m%d\"}}', '#define BUILD 000000' -join \"`n\" ^| Set-Content -NoNewline $f; Add-Content -NoNewline \"`n\" $f}",
 ]
 only_release = true
