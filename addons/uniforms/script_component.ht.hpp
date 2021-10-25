@@ -27,7 +27,7 @@
     class NEW_UNIFORM_WEP(inf,name) : NEW_UNIFORM_WEP(inf,base) { \
         scope = 2; \
         scopeCurator = 2; \
-        displayName = QUOTE([61st] Infantry Uniform ('##name##')); \
+        displayName = QUOTE([61st] Uniform ('##name##')); \
         class ItemInfo : ItemInfo { \
             uniformClass = QUOTE(NEW_UNIFORM(inf,name)); \
         }; \

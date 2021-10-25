@@ -25,6 +25,24 @@ class CfgWeapons {
     };
     ///////////////////////////////////////////INF Uniforms/////////////////////////////////////////////////////////
     NEW_INF_UNIFORM_WEP(Myers)
+    NEW_INF_UNIFORM_WEP(1SG)
+    NEW_INF_UNIFORM_WEP(2LT)
+    NEW_INF_UNIFORM_WEP(CPL)
+    NEW_INF_UNIFORM_WEP(CW1)
+    NEW_INF_UNIFORM_WEP(CW2)
+    NEW_INF_UNIFORM_WEP(CW3)
+    NEW_INF_UNIFORM_WEP(CW4)
+    NEW_INF_UNIFORM_WEP(CW5)
+    NEW_INF_UNIFORM_WEP(1LT)
+    NEW_INF_UNIFORM_WEP(PFC)
+    NEW_INF_UNIFORM_WEP(PV2)
+    NEW_INF_UNIFORM_WEP(PVT)
+    NEW_INF_UNIFORM_WEP(SFC)
+    NEW_INF_UNIFORM_WEP(SGT)
+    NEW_INF_UNIFORM_WEP(SPC)
+    NEW_INF_UNIFORM_WEP(SSG)
+    NEW_INF_UNIFORM_WEP(Anubis)
+    NEW_INF_UNIFORM_WEP(Avian)
 };
 
 
@@ -37,4 +55,22 @@ class CfgVehicles {
 
     ///////////////////////////////////////////INF Uniforms/////////////////////////////////////////////////////////
     NEW_INF_UNIFORM(Myers)
+    NEW_INF_UNIFORM(1SG)
+    NEW_INF_UNIFORM(2LT)
+    NEW_INF_UNIFORM(CPL)
+    NEW_INF_UNIFORM(CW1)
+    NEW_INF_UNIFORM(CW2)
+    NEW_INF_UNIFORM(CW3)
+    NEW_INF_UNIFORM(CW4)
+    NEW_INF_UNIFORM(CW5)
+    NEW_INF_UNIFORM(1LT)
+    NEW_INF_UNIFORM(PFC)
+    NEW_INF_UNIFORM(PV2)
+    NEW_INF_UNIFORM(PVT)
+    NEW_INF_UNIFORM(SFC)
+    NEW_INF_UNIFORM(SGT)
+    NEW_INF_UNIFORM(SPC)
+    NEW_INF_UNIFORM(SSG)
+    NEW_INF_UNIFORM(Anubis)
+    NEW_INF_UNIFORM(Avian)
 };
