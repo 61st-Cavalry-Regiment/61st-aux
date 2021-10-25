@@ -4,26 +4,28 @@
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2611621555">61st Aux Mod Download (Steam)</a>
 
-# Installation and Use
+## Installation and Use
 
-## From Steam
+### From Steam
 
 To use the 61st Aux Mod, download the mod from <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2611621555">Steam</a> along with all of its dependencies. From there, go into the ArmA 3 launcher and enable the mod from the Mods menu. ArmA 3 will ask you if you want to enable the dependencies, select `yes`.
 
-## Building the Repo
+### Building the Repo
 
 You can view full instructions on building the 61st Aux Mod [here](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod/-/blob/0f8edb737f8e2822b6a87f81be12646ab7fcc95e/BUILDING.md)
 
-# Contributing
+## Contributing
 
 Want to submit an issue, feature request, or just assist in the development? Submit an [issue](https://github.com/61st-Cavalry-Regiment/61st-aux/issues) or submit a new merge request!
 
 Please visit our [Contributing Guidelines](CONTRIBUTING.md) before requesting to merge any code!
 
-## Setting Up the Repository
+### Setting Up the Repository
+
 The following sections will walk you through setting up the recommended development environment for working on the 61st Aux Mod. 
 
-### Downloading Git and Git LFS
+#### Downloading Git and Git LFS
+
 If you have not already, the first step is to install [Git](https://git-scm.com/). The download link can be found [here](https://git-scm.com/downloads). Once on the Downloads page, select the operating system (Windows, Mac, or Unix) you will be developing on.
 
 Run the Git installer - you can keep all the options at their defaults, but feel free to change settings if you know what you are doing.
@@ -34,7 +36,8 @@ Once Git LFS is installed, open the program on your computer called **Git Bash**
 
 In Git Bash, type `git lfs install` and click enter. Congrats, you just installed Git LFS!
 
-### Downloading Visual Studio Code and Installing Extensions
+#### Downloading Visual Studio Code and Installing Extensions
+
 The second step is to install [Visual Studio Code](https://code.visualstudio.com/). Once downloaded, I would recommend taking a look at some of the getting started content on the Visual Studio Code website (the page that appears after you download the app) if you want to know more about the application.
 
 Once downloaded, run the installer. Leave all options at their defaults (unless you want to change the Desktop Icon one) and hit install!
@@ -45,7 +48,7 @@ Once Visual Studio is opened, open the extensions menu (`Ctrl+Shift+X`) and sear
 
 ![visual-studio-extensions](/docs/_media/readme/git_history.png)
 
-### Clone the Repository
+#### Clone the Repository
 
 On GitHub, select the green **Code** button near the top right page. You must be on the repository homepage to see the Clone button, if you are reading this file from another location, click [here](https://github.com/61st-Cavalry-Regiment/61st-aux/tree/master) to get to the repository homepage.
 
@@ -69,7 +72,7 @@ A file selection window will appear. Select a location you want the Aux Mod to b
 
 After the clone, Visual Studio Code will ask you if you want to open the repository. Click yes.
 
-### Creating A Development Branch
+#### Creating A Development Branch
 
 Before continuing, please read the [Contributing Guidelines](CONTRIBUTING.md) for information about how to properly name your branches.
 
@@ -87,7 +90,7 @@ The create new branch button will create a new branch based on the current branc
 
 After clicking either of the two create branch buttons, give your branch a name that does not violate the [Contributing Guidelines](CONTRIBUTING.md).
 
-### Submitting Changes
+#### Submitting Changes
 
 Your development branch has become your unit of work for whatever issue or feature you are developing. To save changes, or `commit` changes as it is called, you must first change the contents of a file. Once you have some changes, Visual Studio code will display the a list of changed files in the Source Control (`Ctrl+Shift+G`) menu.
 
@@ -106,7 +109,7 @@ Once you have staged changes and have a message, you can click the check mark to
 
 Sometimes you may need to pull changes from the GitLab before you can push. If that is the case, click pull, fix any [merge conflicts](#merge-conflicts), then push to your branch.
 
-### Creating A Merge Request
+#### Creating A Merge Request
 
 Once you have completed your changes to close an issue on the GitLab, you can make a Merge Request. Head over to the [GitLab](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod) a click the merge request button on the left and then select the **New Merge Request** button to start the merge request process.
 
@@ -138,7 +141,7 @@ The sidebar holds quick access information about labels, reviewers, and other su
 
 From here - its a waiting game for the repository maintainers to approve your merge request and merge it into the mod!
 
-### Rebase A Branch
+#### Rebase A Branch
 
 Sometimes there will be updates to the base branch that you created a development branch on. When this happens, you need to `rebase` your branch onto your base branch in order to get those latest updates. This should be done before you make a merge request in the event there have been updates to prevent merge conflicts.
 
@@ -147,6 +150,7 @@ To start a rebase, open the Source Control (`Ctrl+Shift+G`) menu and select `reb
 ![rebase-button](docs/_media/readme/rebase_button.png)
 
 Once you click the button, you will see a list of branches to rebase your branch off of. Select your base branch.
+
 - If you are working on a `dev` branch, your base branch will be `development`.
 - If you ware working on a release branch, your base branch will be the release branch with the same version number as your branch.
 
@@ -156,7 +160,7 @@ Branches that start with `origin` (by default) are saved on the GitLab, while br
 
 In most cases, you will find yourself with [merge conflicts](#merge-conflicts). See the next section for details on resolving those.
 
-### Merge Conflicts
+#### Merge Conflicts
 
 WHen merging a pull request, or completing a rebase, you are likely to encounter merge conflicts. These occur when two files are changed in two different branches. Visual Studio Code has an editor to help you resolve these conflicts for successful merging of branches.
 
@@ -165,6 +169,7 @@ First, select your development branch. You can switch branches by clicking on th
 ![rebase-option](docs/_media/readme/rebase_button.png)
 
 Once you click rebase, a branch selection will appear. Select the base branch your development branch is created off of.
+
 - If you are working on a `dev` branch, your base branch will be `development`.
 - If you ware working on a release branch, your base branch will be the release branch with the same version number as your branch.
 
@@ -183,4 +188,5 @@ In the terminal, type `git rebase --continue` to proceeded to the next step of t
 Once the rebase is completed, you need to do one more thing to keep your branch properly updated. Type `git push --force` in the terminal to publish your changes to GitLab. At this point, you are ready to make a [merge request](#creating-a-merge-request)!
 
 ## Notes
+
 - For rebase actions, any terminal can be used - not just the integrated terminal.
