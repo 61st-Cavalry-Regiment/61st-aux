@@ -18,7 +18,7 @@ You can view full instructions on building the 61st Aux Mod [here](https://gitla
 
 Want to submit an issue, feature request, or just assist in the development? Submit an [issue](https://github.com/61st-Cavalry-Regiment/61st-aux/issues) or submit a new merge request!
 
-Please visit our [Contributing Guidelines](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod/-/blob/adc341398ee63ca9df7edb383585481cbbc4a99e/CONTRIBUTING.md) before requesting to merge any code!
+Please visit our [Contributing Guidelines](CONTRIBUTING.md) before requesting to merge any code!
 
 ## Setting Up the Repository
 The following sections will walk you through setting up the recommended development environment for working on the 61st Aux Mod. 
@@ -71,7 +71,7 @@ After the clone, Visual Studio Code will ask you if you want to open the reposit
 
 ### Creating A Development Branch
 
-Before continuing, please read the [Contributing Guidelines](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod/-/blob/adc341398ee63ca9df7edb383585481cbbc4a99e/CONTRIBUTING.md) for information about how to properly name your branches.
+Before continuing, please read the [Contributing Guidelines](CONTRIBUTING.md) for information about how to properly name your branches.
 
 > A branch that has an invalid name will not be able to be pushed to the GitLab repository. In the even this happens, create a new branch from your invalid branch, this time with a valid name, or use the Rename Branch function.
 
@@ -85,7 +85,7 @@ Or by clicking the branch name at the bottom left corner of Visual Studio Code:
 
 The create new branch button will create a new branch based on the current branch you are using, while the create new branch from option will let you select a base branch to make a new branch from.
 
-After clicking either of the two create branch buttons, give your branch a name that does not violate the [Contributing Guidelines](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod/-/blob/adc341398ee63ca9df7edb383585481cbbc4a99e/CONTRIBUTING.md).
+After clicking either of the two create branch buttons, give your branch a name that does not violate the [Contributing Guidelines](CONTRIBUTING.md).
 
 ### Submitting Changes
 
