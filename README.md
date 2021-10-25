@@ -2,6 +2,10 @@
 
 ![SQF Checker](https://github.com/61st-Cavalry-Regiment/61st-aux/workflows/SQF%20Checker/badge.svg)
 
+## How to build the mod
+
+    Run `build.bat` then add the entire aux mod folder as a local mod on arma to test
+
 ## How to build for release
 
     Run `release.bat` and upload the folder in releases.
