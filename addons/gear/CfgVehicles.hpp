@@ -139,8 +139,8 @@ class CfgVehicles {
 		tf_dialog = "rt1523g_radio_dialog";
 		tf_subtype = "digital_lr";
 	};
-	class rhsusf_assault_eagleiii_ocp;	
-	class GVAR(eagleiii_lr):rhsusf_assault_eagleiii_ocp {
+	class rhsusf_assault_eagleaiii_ocp;	
+	class GVAR(eagleiii_lr):rhsusf_assault_eagleaiii_ocp {
 		DISPLAYNAME(Eagle III LR)
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
