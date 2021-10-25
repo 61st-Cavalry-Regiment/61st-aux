@@ -23,6 +23,7 @@ class CfgWeapons {
             uniformClass = QUOTE(NEW_UNIFORM(inf,base));
         };
     };
+    ///////////////////////////////////////////INF Uniforms/////////////////////////////////////////////////////////
     NEW_INF_UNIFORM_WEP(myers)
 };
 
@@ -32,5 +33,8 @@ class CfgVehicles {
     class NEW_UNIFORM(inf,base) : rhsusf_army_acu_oefcp_uniform {
         hiddenSelectionsTextures[] = {QPATHTOF(_textures\inf\base.paa),"rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_02_oefcp_co.paa","rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_03_ucp_co.paa","#(argb,8,8,3)color(0,0,0,0)","rhsusf\addons\rhsusf_infantry2\acu\data\rhsusf_uniform_acu_acc2_co.paa"};
     };
+
+
+    ///////////////////////////////////////////INF Uniforms/////////////////////////////////////////////////////////
     NEW_INF_UNIFORM(myers)
 };
