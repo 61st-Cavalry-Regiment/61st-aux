@@ -12,7 +12,7 @@ To use the 61st Aux Mod, download the mod from <a href="https://steamcommunity.c
 
 ### Building the Repo
 
-You can view full instructions on building the 61st Aux Mod [here](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod/-/blob/0f8edb737f8e2822b6a87f81be12646ab7fcc95e/BUILDING.md)
+You can build the mod buy running `build.bat`
 
 ## Contributing
 
