@@ -28,7 +28,7 @@ p2 = [0,0,0];
 ["First location set. Slew to new position and select Measure", true, 5] call ACE_common_fnc_displayText;
 LOG("First location set. Slew to new position and select Measure");
 
-_actionID = _veh addAction ["Measure", {p2 = screenToWorld [.5, .5];LOG_1("%1",screenToWorld[ARR_2(.5, .5)]);}, nil, 10, false, true, "", QUOTE([ARR_2(_this, _target)] call FUNC(isViewISR))];
+_actionID = _veh addAction ["Measure", {p2 = screenToWorld [.5, .5];LOG_1("%1",screenToWorld[ARR_2(.5, .5)]);}, nil, 1000-8, false, true, "", QUOTE([ARR_2(_this, _target)] call FUNC(isViewISR))];
 
 LOG("Waiting for _p2");
 waitUntil {not (p2 isEqualTo [0,0,0])};

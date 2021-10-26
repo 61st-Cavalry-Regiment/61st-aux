@@ -5,3 +5,4 @@ PREP(NorthInd);
 PREP(turretAzEl);
 PREP(inputGrid);
 PREP(mapSlew);
+PREP(addMarker)

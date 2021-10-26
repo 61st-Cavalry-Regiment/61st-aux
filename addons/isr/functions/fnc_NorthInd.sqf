@@ -33,6 +33,11 @@ while {alive _unit} do {
 
 		if (missionNamespace getVariable QGVAR(ShowTarget)) then
 		{
+			x3 = str (round((_wPos select 0)/100));
+			y3 = str (round((_wPos select 1)/100));
+			while {count x3 < 3} do {x3 = format["0%1",x3]};
+			while {count y3 < 3} do {y3 = format["0%1",y3]};
+
 			x4 = str (round((_wPos select 0)/10));
 			y4 = str (round((_wPos select 1)/10));
 			while {count x4 < 4} do {x4 = format["0%1",x4]};
@@ -45,7 +50,7 @@ while {alive _unit} do {
 
 			switch GVAR(GridNum) do
 			{
-				case 6: {_target = format["TGT: %1", (mapGridPosition _wPos)];};
+				case 6: {_target = format["TGT: %1 %2", x3, y3];};
 				case 8: {_target = format["TGT: %1 %2", x4, y4];};
 				case 10: {_target = format["TGT: %1 %2", x5, y5];};
 				default {systemChat "Grid number error"};
@@ -63,6 +68,7 @@ while {alive _unit} do {
 		if (missionNamespace getVariable QGVAR(ShowAz)) then {709 cutRsc ["Az", "Plain", -1, false];};
 		if (missionNamespace getVariable QGVAR(ShowEl)) then {708 cutRsc ["El", "Plain", -1, false];};
 
+		// LOG(_target);
 		uiNamespace getVariable "guiTgt" ctrlSetText(_target);
 		uiNamespace getVariable "guiEl" ctrlSetText(format["%1", round(_turretEl)]);
 		uiNamespace getVariable "guiAz" ctrlSetText(format["%1", round(_turretAz)]);
