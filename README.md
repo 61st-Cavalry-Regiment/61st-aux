@@ -26,6 +26,8 @@ The following sections will walk you through setting up the recommended developm
 
 #### Downloading Git and Git LFS
 
+#### Git LFS can be ignored for the time being
+
 If you have not already, the first step is to install [Git](https://git-scm.com/). The download link can be found [here](https://git-scm.com/downloads). Once on the Downloads page, select the operating system (Windows, Mac, or Unix) you will be developing on.
 
 Run the Git installer - you can keep all the options at their defaults, but feel free to change settings if you know what you are doing.
