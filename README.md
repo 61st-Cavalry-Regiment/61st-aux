@@ -109,35 +109,35 @@ Once you have staged changes and have a message, you can click the check mark to
 
 Sometimes you may need to pull changes from the GitLab before you can push. If that is the case, click pull, fix any [merge conflicts](#merge-conflicts), then push to your branch.
 
-#### Creating A Merge Request
+#### Creating A Pull Request
 
-Once you have completed your changes to close an issue on the GitLab, you can make a Merge Request. Head over to the [GitLab](https://gitlab.com/501st-legion-starsim/aux-mod-team/501st-Aux-Mod) a click the merge request button on the left and then select the **New Merge Request** button to start the merge request process.
+Once you have completed your changes to close an issue on the GitHub, you can make a Pull Request. Head over to the [GitHub](https://github.com/61st-Cavalry-Regiment/61st-aux) and click the pull request button on the top and then select the **New Pull Request** button to start the pull request process.
 
-![new-merge-request](docs/_media/readme/gitlab_new_merge_request_alt.png)
+![new-merge-request](docs/_media/readme/github_new_pull_request_alt.png)
 
-To properly select what you are merging and where you are merging it to, we change the branches on the page that shows up after clicking **New Merge Request**. In the left option, you select your development branch. On the right side, you select your base branch, i.e. the branch you are merging your updates into. This will be either a release branch or the development branch.
+To properly select what you are merging and where you are merging it to, we change the branches on the page that shows up after clicking **New Pull Request**. In the left option, you select your development branch. On the right side, you select your base branch, i.e. the branch you are merging your updates into. This will be either a release branch or the development branch.
 
-![merge-request-branch-selection](docs/_media/readme/gitlab_merge_request_targeting.png)
+![merge-request-branch-selection](docs/_media/readme/github_merge_request_targeting.png)
 
-Once you select your branches, click the Compare Branches and continue button. This will take you to the Merge Request details page. In the top half of the page you can input the Title and Description of your merge request. If this merge request closes and issue, make sure to note that in the merge request description with the keyword `Closes #<issue number>` (ex. `Closes #12`).
+Once you select your branches, click the Compare Branches and continue button. This will take you to the Pull Request details page. In the top half of the page you can input the Title and Description of your merge request. If this merge request closes and issue, make sure to note that in the merge request description with the keyword `Closes #<issue number>` (ex. `Closes #12`).
 
-![merge-request-details](docs/_media/readme/gitlab_merge_request_contents.png)
+![merge-request-details](docs/_media/readme/github_pull_request_contents.png)
 
-In the bottom half, you can select more details for the merge request. This includes setting labels for what type of changes this merge request provides, and requesting specific people to review your merge request. As your branch will only be used for a single feature, keep the delete branch after merge request is completed option checked.
+In the right side, you can select more details for the merge request. This includes setting labels for what type of changes this pull request provides, and requesting specific people to review your merge request. As your branch will only be used for a single feature, keep the delete branch after merge request is completed option checked.
 
-![merge-request-details-two](docs/_media/readme/gitlab_merge_request_contents_two.png)
+![merge-request-details-two](docs/_media/readme/github_pull_request_contents_two.png)
 
-Once the parameters are set to your liking, you can Create the merge request. This will bring you to the published merge request. The top half of the page shows the requirements for the merge request to be merged into your destination branch. 
+Once the parameters are set to your liking, you can Create the pull request. This will bring you to the published pull request. The top half of the page shows the requirements for the merge request to be merged into your destination branch.
 
-![published-merge-request-details](docs/_media/readme/gitlab_pub_merge_request_contents.png)
+![published-merge-request-details](docs/_media/readme/github_pub_merge_request_contents.png)
 
-The bottom half of the page holds the place for conversations about the merge request. 
+The bottom half of the page holds the place for conversations about the merge request.
 
-![published-merge-request-details-two](docs/_media/readme/gitlab_pub_merge_request_contents_two.png)
+![published-merge-request-details-two](docs/_media/readme/github_pub_pull_request_contents_two.png)
 
 The sidebar holds quick access information about labels, reviewers, and other such information. It can also be changed from the sidebar.
 
-![published-merge-request-details-three](docs/_media/readme/gitlab_pub_merge_request_contents_three.png)
+![published-merge-request-details-three](docs/_media/readme/github_pub_pull_request_content_three.png)
 
 From here - its a waiting game for the repository maintainers to approve your merge request and merge it into the mod!
 
