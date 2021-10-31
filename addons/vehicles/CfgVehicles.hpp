@@ -1,3 +1,8 @@
+class SensorTemplateIR;
+class SensorTemplatePassiveRadar;
+class SensorTemplateVisual;
+class SensorTemplateLaser;
+
 class CfgVehicles {
 	//Helicopters
 	class Helicopter {
@@ -34,7 +39,7 @@ class CfgVehicles {
 	class RHS_UH60M: RHS_UH60M_US_base {
 		#include "MFD.hpp"
 		defaultUserMFDvalues[] = {0,0,0,0,1,0,0.2};
-		lockDetectionSystem = 16;
+		lockDetectionSystem = "2+4+8";
 		incomingMissileDetectionSystem = 16;
 		// statement = "this SetUserMFDvalue [3,1];this SetUserMFDvalue [4,0.65];this SetUserMFDvalue [5,0];"; To change color
 		#include "UH60AceActions.hpp"
@@ -66,56 +71,130 @@ class CfgVehicles {
 		class pilotCamera
         {
             class OpticsIn
-            {
-                class Wide
-                {
-                    opticsDisplayName = "WFOV";
-                    initAngleX = 0;
-                    minAngleX = 0;
-                    maxAngleX = 0;
-                    initAngleY = 0;
-                    minAngleY = 0;
-                    maxAngleY = 0;
-                    initFov = "(75 / 120)";
-                    minFov = "(75 / 120)";
-                    maxFov = "(75 / 120)";
-                    directionStabilized = 1;
-                    visionMode[] = {"Normal","NVG","Ti"};
-                    thermalMode[] = {0,1};
-                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
-                };
-                class Medium: Wide
-                {
-                    opticsDisplayName = "MFOV";
-                    initFov = "(14.4 / 120)";
-                    minFov = "(14.4 / 120)";
-                    maxFov = "(14.4 / 120)";
-                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
-                };
-                class Narrow: Wide
-                {
-                    opticsDisplayName = "NFOV";
-                    initFov = "(4.8 / 120)";
-                    minFov = "0.01";
-                    maxFov = "(4.8 / 120)";
-                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-                };
-            };
+			{
+				class Wide
+				{
+					opticsDisplayName="WFOV";
+					initAngleX=0;
+					minAngleX=-10;
+					maxAngleX=90;
+					initAngleY=0;
+					minAngleY=-90;
+					maxAngleY=90;
+					initFov=0.425;//"(30 / 120)";
+					minFov=0.425;//"(30 / 120)";
+					maxFov=0.425;//"(30 / 120)";
+					thermalMode[] = {0,1,2,3,4,5};
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera2",
+						"OpticsBlur2"
+					};
+				};
+
+				class zoomx4: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.425/4)";//"(3.75 / 120)";
+					minFov="(0.425/4)";//"(3.75 / 120)";
+					maxFov="(0.425/4)";//"(3.75 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+
+				class zoomX8: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/8)";//"(.375 / 120)";
+					minFov="(0.42/8)";//"(.375 / 120)";
+					maxFov="(0.42/8)";//"(.375 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/20)";//"(.375 / 120)";
+					minFov="(0.42/20)";//"(.375 / 120)";
+					maxFov="(0.42/20)";//"(.375 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/50)";//"(.375 / 120)";
+					minFov="(0.42/50)";//"(.375 / 120)";
+					maxFov="(0.42/50)";//"(.375 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+
+				class zoomX70: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(0.42/70)";//"(.375 / 120)";
+					minFov="(0.42/70)";//"(.375 / 120)";
+					maxFov="(0.42/70)";//"(.375 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics=1;
+				showUAVViewInOptics=0;
+				showSlingLoadManagerInOptics=1;
+			};
             minTurn = -180;
             maxTurn = 180;
             initTurn = 0;
+
             minElev = -10;
             maxElev = 90;
-            initElev = 25;
-            maxXRotSpeed = 1;
-            maxYRotSpeed = 1;
-            maxMouseXRotSpeed = 0.5;
-            maxMouseYRotSpeed = 0.5;
+            initElev = -10;
+
+            maxXRotSpeed = .3;
+            maxYRotSpeed = .3;
             pilotOpticsShowCursor = 1;
             controllable = 1;
         };
 		class Components: Components {
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=7500;
+						maxTrackableSpeed=900;
+						angleRangeHorizontal=80;
+						angleRangeVertical=60;
+						aimDown=20;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						animDirection = "mainTurret";
+					};
+
+					class VisualSensorComponent : SensorTemplateVisual {};
+
+					class LaserSensor : SensorTemplateLaser {};
+				};
+			};
 			class TransportPylonsComponent: TransportPylonsComponent {
 				class Presets {
 					class Empty {
