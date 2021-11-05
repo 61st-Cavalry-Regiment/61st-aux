@@ -18,7 +18,7 @@ class ACE_SelfActions: ACE_SelfActions {
 		noseArt(P6F.paa, E.paa, p6, Phoenix 6)
 		noseArt(P11F.paa, P11E.paa, p11, Phoenix 1-1)
 		noseArt(P12F.paa, E.paa, p12, Phoenix 1-2)
-		noseArt(P13F.paa, E.paa, p13, Phoenix 1-3)
+		noseArt(P13F.paa, P13E.paa, p13, Phoenix 1-3)
 		noseArt(P14F.paa, E.paa, p14, Phoenix 1-4)
 		};
 };
