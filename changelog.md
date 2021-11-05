@@ -52,4 +52,8 @@
 
 ### Fixes
 
+<<<<<<< HEAD
 + Fix inheritance for Eagle III LR
+=======
++ Fix inherentence for Eagle III LR
+>>>>>>> master
