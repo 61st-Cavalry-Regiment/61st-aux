@@ -48,6 +48,7 @@
 ### Additions
 
 + Add Utility functions to targeting cameras
++ Add IR/RWR/Visual sensors to the DAP
 + Add 61st specific infantry uniforms
 
 ### Fixes
