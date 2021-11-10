@@ -15,3 +15,4 @@
 
 #define noseArt(a,b,c,d) class c##: default {displayName = d; statement = '_target setObjectTextureGlobal [0, QPATHTOF(data\textures\uh60\##a##) ]; _target setObjectTextureGlobal [1, QPATHTOF(data\textures\uh60\##b##)];' ;};
 #define faction(a,b) class GVAR(a): b {faction = "61st_Aux";};
+#define noseArtAh64(a,b,c) class b##: default {displayName = c; statement = '_target setObjectTextureGlobal [0, QPATHTOF(data\textures\ah64\##a##) ];' ;};
