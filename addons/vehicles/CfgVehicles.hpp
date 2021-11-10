@@ -229,9 +229,8 @@ class CfgVehicles {
 	faction(MELB_MH6M, RHS_MELB_MH6M)
 	class RHS_MELB_AH6M;
 	faction(MELB_AH6M, RHS_MELB_AH6M)
-	class RHS_AH64D_wd: RHS_AH64D_wd {
-		#include "MFD.hpp"
-		defaultUserMFDvalues[] = {0,0,0,0,1,0,0.2};
+	class RHS_AH64D;
+	class RHS_AH64D_wd: RHS_AH64D {
 		lockDetectionSystem = 16;
 		incomingMissileDetectionSystem = 16;
 		#include "AH64AceActions.hpp"
