@@ -5,5 +5,10 @@ if !(isNull objectParent player) then {
 			case 1: {vehicle player setUserMFDValue [0,0]};
 		};
 	};
-	//TODO Add Apache toggle, user value 3 is alpha set to 1 to enable 0 to disable
+    if (getText (configFile >> 'CfgVehicles' >> typeOf(vehicle player) >> 'displayName') find 'AH-64D' != -1) then {
+		switch (getUserMFDvalue vehicle player # 3) do {
+			case 0: {vehicle player setUserMFDValue [3,1]};
+			case 1: {vehicle player setUserMFDValue [3,0]};
+		};
+	};	
 };
