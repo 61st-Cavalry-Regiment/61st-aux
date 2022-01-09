@@ -1,6 +1,6 @@
 # 61st Aux Mod
 
-<a href="#">61st Website</a>
+<a href="https://www.61st-regiment.com/">61st Website</a>
 
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2611621555">61st Aux Mod Download (Steam)</a>
 
