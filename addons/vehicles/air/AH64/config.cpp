@@ -23,7 +23,11 @@ class CfgPatches
 };
 
 class CfgVehicles {
-	class RHS_AH64D;
+	class RHS_AH64_base;
+	class RHS_AH64D: RHS_AH64_base {
+		class ACE_SelfActions;
+	};
+
 	class RHS_AH64D_wd: RHS_AH64D {
 		lockDetectionSystem = 16;
 		incomingMissileDetectionSystem = 16;

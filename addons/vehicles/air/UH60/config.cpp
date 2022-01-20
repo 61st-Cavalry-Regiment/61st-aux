@@ -24,6 +24,12 @@ class CfgPatches
 
 #include "CfgEventHandlers.hpp"
 
+class SensorTemplateIR;
+class SensorTemplatePassiveRadar;
+class SensorTemplateVisual;
+class SensorTemplateLaser;
+
+
 class CfgVehicles {
     #include "inheritance.hpp"
 
