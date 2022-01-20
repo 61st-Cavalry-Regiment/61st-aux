@@ -3,7 +3,6 @@ class ACE_SelfActions: ACE_SelfActions {
 		displayName = "HMD";
 		condition = "(player in [driver this, this turretUnit [0]]) && (alive this)";
 		statement = QUOTE(call FUNC(toggleHMD));
-		icon = "";
 	};
 	class skin {
 		displayName = "Nose Art";
