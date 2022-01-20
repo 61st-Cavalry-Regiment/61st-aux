@@ -64,7 +64,7 @@
 #define TYPE_UNIFORM 801
 #define TYPE_BACKPACK 901
 
-#define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
+#define DFUNC(var1) TRIPLES(MAIN_ADDON,fnc,var1)
 #undef FUNC
 #define FUNC(var1) DFUNC(var1)
 
