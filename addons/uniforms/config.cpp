@@ -41,8 +41,11 @@ class CfgWeapons {
     NEW_INF_UNIFORM_WEP(SGT)
     NEW_INF_UNIFORM_WEP(SPC)
     NEW_INF_UNIFORM_WEP(SSG)
-    NEW_INF_UNIFORM_WEP(Anubis)
     NEW_INF_UNIFORM_WEP(Avian)
+    NEW_INF_UNIFORM_WEP(Sierra)
+    NEW_INF_UNIFORM_WEP(Abstract)
+    NEW_INF_UNIFORM_WEP(Carnage)
+    NEW_INF_UNIFORM_WEP(Fry)
 };
 
 
@@ -71,6 +74,9 @@ class CfgVehicles {
     NEW_INF_UNIFORM(SGT)
     NEW_INF_UNIFORM(SPC)
     NEW_INF_UNIFORM(SSG)
-    NEW_INF_UNIFORM(Anubis)
     NEW_INF_UNIFORM(Avian)
+    NEW_INF_UNIFORM(Sierra)
+    NEW_INF_UNIFORM(Abstract)
+    NEW_INF_UNIFORM(Carnage)
+    NEW_INF_UNIFORM(Fry)
 };

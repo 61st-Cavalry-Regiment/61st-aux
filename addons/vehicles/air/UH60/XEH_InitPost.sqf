@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\..\script_component.hpp"
 params ["_unit"];
 LOG("UH60 Resupply Added");
 if(_unit isEqualTo player) then {_unit = vehicle _unit};
