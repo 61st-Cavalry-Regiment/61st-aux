@@ -11,6 +11,8 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+
+#include "CfgEventHandlers.hpp"
 #include "CfgSettings.hpp"
 enableDebugConsole = 1;
 
