@@ -433,22 +433,22 @@ class CfgVehicles {
 		};
 		class TransportWeapons
 		{
-			weap_xx(CUP_arifle_M4A1, 1)
+			weap_xx(CUP_arifle_M4A1, 1);
 		};
 		class TransportMagazines
 		{
-			mag_xx(CUP_30Rnd_556x45_Stanag, 15)
-			mag_xx(SmokeShell, 2)
-			mag_xx(SmokeShellOrange, 2)
-			mag_xx(Chemlight_Red, 2)
+			mag_xx(CUP_30Rnd_556x45_Stanag, 15);
+			mag_xx(SmokeShell, 2);
+			mag_xx(SmokeShellOrange, 2);
+			mag_xx(Chemlight_Red, 2);
 		};
 		maximumLoad=2000;
 		class TransportItems
 		{
-			item_xx(ACE_elasticBandage, 20)
-			item_xx(ACE_packingBandage, 20)
-			item_xx(ACE_tourniquet, 8)
-			item_xx(ACE_splint, 8)
+			item_xx(ACE_elasticBandage, 20);
+			item_xx(ACE_packingBandage, 20);
+			item_xx(ACE_tourniquet, 8);
+			item_xx(ACE_splint, 8);
 		};
 		class TransportBackpacks
 		{
