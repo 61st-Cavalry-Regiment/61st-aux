@@ -8,7 +8,7 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-            ADDON
+			ADDON
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -30,6 +30,7 @@ class SensorTemplateVisual;
 class SensorTemplateLaser;
 class DefaultVehicleSystemsDisplayManagerRight;
 class DefaultVehicleSystemsDisplayManagerLeft;
+class SensorsManagerComponent;
 
 
 class CfgVehicles {
@@ -55,24 +56,94 @@ class CfgVehicles {
 		//class Components;
 //		class TransportBackpacks: TransportBackpacks {
 //			backpack_xx(tf_rt1523g_big_rhs, 4)
-//		}
+//		};
 	};
-	faction(UH60M, 61ST_UH60M)
-	class 61ST_UH60M2: 61ST_UH60M {
+	faction(UH60M, CUP_B_UH60M_US)
+	class 61ST_UH60M2: CUP_B_UH60M_US {
 	};
 	class CUP_B_MH60L_DAP_4x_US: 61ST_UH60M2 {
-		class Components: Components {
-			class TransportPylonsComponent;
-		};
+//		class Components: Components {
+//			class TransportPylonsComponent: TransportPylonsComponent {
+//				class pylons {};
+//			};
+//		};
 	};
-	faction(UH60M_ESSS, CUP_B_MH60L_DAP_4x_US)
-	class GVAR(UH60M_DAP): CUP_B_MH60L_DAP_4x_US {
+	faction(UH60M, CUP_B_MH60L_DAP_4x_US)
+	class 61ST_UH60M_DAP: CUP_B_MH60L_DAP_4x_US {
 		DISPLAYNAME(UH-60M (DAP))
 		scope = public;
 		scopecurator = public;
 		faction = "61st_Aux";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\textures\uh60\uh60m_fuselage_co.paa), QPATHTOF(data\textures\uh60\61stDAP_engine_co.paa), QPATHTOF(data\textures\uh60\default_co.paa)};
 		LockDetectionSystem="2 + 8 + 4";
 		incomingMissileDetectionSystem=16;
+		class AnimationSources: AnimationSources {
+			class Filters_Hide
+			{
+				DisplayName="$STR_CUP_dn_Core_as_hideAirfilter";
+				source="user";
+				initphase=1;
+				animPeriod=1;
+			};
+			class probe_extend
+			{
+				source="user";
+				animPeriod=1.6;
+				initphase=0;
+			};
+			class Hide_Nose
+			{
+				DisplayName="$STR_CUP_dn_Core_as_Hide_Nose_Radar";
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+				author="CUP_AUTHOR_STRING";
+			};
+			class Hide_Probe
+			{
+				DisplayName="$STR_CUP_dn_Core_as_Hide_Probe";
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+				author="CUP_AUTHOR_STRING";
+			};
+			class mainRotor_folded
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+			};
+			class mainRotor_unfolded: mainRotor_folded
+			{
+				source="user";
+				initPhase=0;
+			};
+			class mainRotor_unfolded1: mainRotor_unfolded
+			{
+				source="user";
+				initPhase=0;
+			};
+			class Navyclan_hide
+			{
+				DisplayName="$STR_CUP_dn_Core_as_Navyclan_hide";
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+				author="CUP_AUTHOR_STRING";
+			};
+			class Navyclan2_hide: Navyclan_hide
+			{
+				DisplayName="$STR_CUP_dn_Core_as_Navyclan2_hide";
+			};
+			class Hide_ESSS2x
+			{
+				DisplayName="$STR_CUP_dn_Core_as_Hide_ESSS2x";
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+				author="CUP_AUTHOR_STRING";
+			};
+		};	
 		class pilotCamera
         {
             class OpticsIn
@@ -96,7 +167,7 @@ class CfgVehicles {
 						"NVG",
 						"Ti"
 					};
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_w_F.p3d";
 					opticsPPEffects[]=
 					{
 						"OpticsCHAbera2",
@@ -110,7 +181,7 @@ class CfgVehicles {
 					initFov="(0.425/4)";//"(3.75 / 120)";
 					minFov="(0.425/4)";//"(3.75 / 120)";
 					maxFov="(0.425/4)";//"(3.75 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
 				};
 
 				class zoomX8: Wide
@@ -119,7 +190,7 @@ class CfgVehicles {
 					initFov="(0.42/8)";//"(.375 / 120)";
 					minFov="(0.42/8)";//"(.375 / 120)";
 					maxFov="(0.42/8)";//"(.375 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
 				};
 				class zoomX20: Wide
 				{
@@ -127,7 +198,7 @@ class CfgVehicles {
 					initFov="(0.42/20)";//"(.375 / 120)";
 					minFov="(0.42/20)";//"(.375 / 120)";
 					maxFov="(0.42/20)";//"(.375 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_m_F.p3d";
 				};
 				class zoomX50: Wide
 				{
@@ -135,7 +206,7 @@ class CfgVehicles {
 					initFov="(0.42/50)";//"(.375 / 120)";
 					minFov="(0.42/50)";//"(.375 / 120)";
 					maxFov="(0.42/50)";//"(.375 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
 				};
 
 				class zoomX70: Wide
@@ -144,7 +215,7 @@ class CfgVehicles {
 					initFov="(0.42/70)";//"(.375 / 120)";
 					minFov="(0.42/70)";//"(.375 / 120)";
 					maxFov="(0.42/70)";//"(.375 / 120)";
-					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
 				};
 				showMiniMapInOptics=1;
 				showUAVViewInOptics=0;
@@ -165,6 +236,7 @@ class CfgVehicles {
         };
 		memoryPointDriverOptics = "gunnerview_flir";
 		class Components: Components {
+			class TransportCountermeasuresComponent {};
 			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
 			{
 				defaultDisplay="MinimapDisplay";
@@ -257,14 +329,12 @@ class CfgVehicles {
 						angleRangeVertical=60;
 						aimDown=20;
 					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					class PassiveRadarSensorComponent : SensorTemplatePassiveRadar
 					{
 						//animDirection = "mainTurret";
 					};
-
 					class VisualSensorComponent : SensorTemplateVisual {	
 					};
-
 					class LaserSensorComponent : SensorTemplateLaser {
 					};
 				};
@@ -353,7 +423,6 @@ class CfgVehicles {
 		};
 		weapons[] =
 		{
-			"CUP_weapon_mastersafe",
 			"Laserdesignator_pilotCamera",
 			"CMFlareLauncher"
 		};
