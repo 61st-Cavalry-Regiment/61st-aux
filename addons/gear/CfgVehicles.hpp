@@ -8,7 +8,7 @@ class CfgVehicles {
 	class Box_NATO_Equip_F;
 
 	class CAManBase: Man {
-		// #include "aceActions.hpp" Maybe add these back depending on helmet options
+		#include "aceActions.hpp"
 	};
 	class GVAR(ammoBox): Box_NATO_Ammo_F {
 		scope = 2;
@@ -18,18 +18,6 @@ class CfgVehicles {
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		class TransportMagazines {
-			mag_xx(rhsusf_100Rnd_556x45_M855_mixed_soft_pouch,15);
-			mag_xx(rhsusf_20Rnd_762x51_SR25_m993_Mag,10);
-			mag_xx(rhs_mag_30Rnd_556x45_M855_Stanag,30);
-			mag_xx(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,10);
-			mag_xx(rhs_mag_M433_HEDP, 10);
-			mag_xx(rhs_mag_M441_HE, 10);
-			mag_xx(rhs_mag_M713_Red, 5);
-			mag_xx(rhs_mag_M714_White, 5);
-			mag_xx(rhs_mag_M715_Green, 5);
-			mag_xx(rhs_mag_M716_Yellow, 5);
-			// mag_xx(rhs_mag_smaw_SR, 5); Extract to seperate box Box_NATO_WpsLaunch_F
-			// mag_xx(rhs_mag_smaw_HEAA, 5);
 		};
 	};
 	class GVAR(launcherBox): Box_NATO_WpsLaunch_F {
@@ -40,14 +28,9 @@ class CfgVehicles {
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		class TransportMagazines {
-			mag_xx(rhs_mag_smaw_HEDP, 2);
-			mag_xx(rhs_mag_smaw_HEAA, 2);
 		};
 		class TransportItems {};
 		class TransportWeapons {
-			weap_xx(rhs_weap_M136, 1);
-			weap_xx(rhs_weap_M136_hedp, 1);
-			weap_xx(rhs_weap_M136_hp, 1);
 		};
 	};
 	class GVAR(medicalBox): Box_NATO_Equip_F {
