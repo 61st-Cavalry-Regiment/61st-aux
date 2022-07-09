@@ -6,10 +6,9 @@ class CfgVehicles {
 	class Box_NATO_Ammo_F;
 	class Box_NATO_WpsLaunch_F;
 	class Box_NATO_Equip_F;
-	class rhsgref_hidf_alicepack;
 
 	class CAManBase: Man {
-		#include "aceActions.hpp"
+		// #include "aceActions.hpp" Maybe add these back depending on helmet options
 	};
 	class GVAR(ammoBox): Box_NATO_Ammo_F {
 		scope = 2;
@@ -79,10 +78,6 @@ class CfgVehicles {
 			item_xx(ACE_tourniquet, 15);
 		};
 	};
-	class GVAR(alicepack): rhsgref_hidf_alicepack {
-		DISPLAYNAME(alicepack)
-		hiddenSelectionsTextures[] = {QPATHTOF(data\textures\alicepack_co.paa)};
-	};
 
 	class GVAR(IbuprofenItem):ACE_morphineItem {
 		scope = 2;
@@ -133,24 +128,6 @@ class CfgVehicles {
 	class B_Carryall_mcamo;	
 	class GVAR(carryall_lr):B_Carryall_mcamo {
 		DISPLAYNAME(Carryall LR)
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
-	};
-	class rhsusf_assault_eagleaiii_ocp;	
-	class GVAR(eagleiii_lr):rhsusf_assault_eagleaiii_ocp {
-		DISPLAYNAME(Eagle III LR)
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
-	};
-	class rhsusf_falconii_mc;	
-	class GVAR(falconii_lr):rhsusf_falconii_mc {
-		DISPLAYNAME(Falcon-II LR)
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 		tf_encryptionCode = "tf_west_radio_code";
