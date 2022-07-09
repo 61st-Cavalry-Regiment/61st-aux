@@ -331,7 +331,7 @@ class CfgVehicles {
 					};
 					class PassiveRadarSensorComponent : SensorTemplatePassiveRadar
 					{
-						animDirection = "mainTurret";
+						//animDirection = "mainTurret";
 					};
 					class VisualSensorComponent : SensorTemplateVisual {	
 					};
@@ -433,58 +433,22 @@ class CfgVehicles {
 		};
 		class TransportWeapons
 		{
-			class _xx_CUP_arifle_M4A1
-			{
-				weapon="CUP_arifle_M4A1";
-				count=1;
-			};
+			weap_xx(CUP_arifle_M4A1, 1)
 		};
 		class TransportMagazines
 		{
-			class _xx_CUP_30Rnd_556x45_Stanag
-			{
-				magazine="CUP_30Rnd_556x45_Stanag";
-				count=15;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=2;
-			};
-			class _xx_SmokeShellOrange
-			{
-				magazine="SmokeShellOrange";
-				count=2;
-			};
-			class _xx_Chemlight_Red
-			{
-				magazine="Chemlight_Red";
-				count=2;
-			};
+			mag_xx(CUP_30Rnd_556x45_Stanag, 15)
+			mag_xx(SmokeShell, 2)
+			mag_xx(SmokeShellOrange, 2)
+			mag_xx(Chemlight_Red, 2)
 		};
 		maximumLoad=2000;
 		class TransportItems
 		{
-			class ACE_elasticBandage
-			{
-				name="ACE_elasticBandage";
-				count=20;
-			};
-			class ACE_packingBandage
-			{
-				name="ACE_packingBandage";
-				count=20;
-			};
-			class ACE_tourniquet
-			{
-				name="ACE_tourniquet";
-				count=8;
-			};
-			class ACE_splint
-			{
-				name="ACE_splint";
-				count=8;
-			};
+			item_xx(ACE_elasticBandage, 20)
+			item_xx(ACE_packingBandage, 20)
+			item_xx(ACE_tourniquet, 8)
+			item_xx(ACE_splint, 8)
 		};
 		class TransportBackpacks
 		{
