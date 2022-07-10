@@ -62,11 +62,11 @@ class CfgVehicles {
 	class 61ST_UH60M2: CUP_B_UH60M_US {
 	};
 	class CUP_B_MH60L_DAP_4x_US: 61ST_UH60M2 {
-//		class Components: Components {
-//			class TransportPylonsComponent: TransportPylonsComponent {
-//				class pylons {};
-//			};
-//		};
+		class Components: Components {
+			class TransportPylonsComponent: TransportPylonsComponent {
+				class pylons {};
+			};
+		};
 	};
 	faction(UH60M, CUP_B_MH60L_DAP_4x_US)
 	class 61ST_UH60M_DAP: CUP_B_MH60L_DAP_4x_US {
