@@ -64,6 +64,7 @@ class CfgVehicles {
 	class CUP_B_MH60L_DAP_4x_US: 61ST_UH60M2 {
 		class Components: Components {
 			class TransportPylonsComponent: TransportPylonsComponent {
+				UIPicture="\CUP\AirVehicles\CUP_AirVehicles_UH60\data\ui\CUP_UH60M_4_3DEN_CA.paa";
 				class pylons {};
 			};
 		};
@@ -340,6 +341,7 @@ class CfgVehicles {
 				};
 			};
 			class TransportPylonsComponent: TransportPylonsComponent {
+				UIPicture="\CUP\AirVehicles\CUP_AirVehicles_UH60\data\ui\CUP_UH60M_4_3DEN_CA.paa";
 				class Presets {
 					class Empty {
 						displayName = "Empty";
