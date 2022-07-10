@@ -17,16 +17,59 @@ class CfgVehicles {
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
-        	ace_dragging_carryPosition[] = {0, 1.5, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
-        	ace_dragging_carryDirection = 90;
+        ace_dragging_carryPosition[] = {0, 1.5, 1};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 90;
 		ace_cargo_size = 2;
-        	ace_cargo_canLoad = 1;
+        ace_cargo_canLoad = 1;
 		class TransportMagazines {
 			mag_xx(CUP_30Rnd_556x45_Stanag,60);
 			mag_xx(CUP_200Rnd_TE4_Red_Tracer_556x45_M249,16);
 			mag_xx(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,8);
 			mag_xx(CUP_20Rnd_762x51_DMR,10);
-			mag_xx(CUP_15Rnd_9x19_M9, 12);
+			mag_xx(CUP_21Rnd_9x19_M17_Black, 12);
+			mag_xx(Laserbatteries, 5);
+		};
+		class TransportItems {
+			item_xx(ACE_SpareBarrel_Item, 5);
+		};
+		class TransportWeapons {};
+		class TransportBackpacks {};	
+	};
+	class GVAR(grenadeBox): B_supplyCrate_F {
+		scope = 2;
+		scopeCurator = 2;
+		DISPLAYNAME(Grenade Box)
+		author = ECSTRING(main, AuthorShort);
+		editorCategory = "EdCat_61st_Supplies";
+		editorSubcategory = "EdSubcat_61st_resupply";
+		ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0, 1.5, 1};  
+        ace_dragging_carryDirection = 90;
+		ace_cargo_size = 2;
+        ace_cargo_canLoad = 1;
+		class TransportMagazines {
+			mag_xx(SmokeShell,20);
+			mag_xx(SmokeShellRed,8);
+			mag_xx(SmokeShellGreen,8);
+			mag_xx(SmokeShellYellow,8);
+			mag_xx(SmokeShellPurple,8);
+			mag_xx(SmokeShellBlue,8);
+			mag_xx(SmokeShellOrange,8);
+			mag_xx(ACE_M84,4);
+			mag_xx(CUP_1Rnd_HE_M203,48);
+			mag_xx(CUP_1Rnd_HEDP_M203,24);
+			mag_xx(CUP_1Rnd_StarFlare_White_M203,16);
+			mag_xx(CUP_1Rnd_StarFlare_Red_M203,16);
+			mag_xx(CUP_1Rnd_Smoke_M203,24);
+			mag_xx(CUP_1Rnd_SmokeRed_M203,16);
+			mag_xx(CUP_1Rnd_SmokeGreen_M203,16);
+			mag_xx(CUP_HandGrenade_M67,20);
+			mag_xx(Chemlight_green,5);
+			mag_xx(Chemlight_red,5);
+			mag_xx(Chemlight_blue,5);
+			mag_xx(MS_Strobe_Mag_1,20);
+			mag_xx(ACE_HandFlare_Red,4);
+			mag_xx(ACE_HuntIR_M203,12);
 		};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -40,23 +83,19 @@ class CfgVehicles {
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		ace_dragging_canCarry = 1;
-        	ace_dragging_carryPosition[] = {0, 1.5, 1};
-        	ace_dragging_carryDirection = 90;
+        ace_dragging_carryPosition[] = {0, 1.5, 1};
+        ace_dragging_carryDirection = 90;
 		ace_cargo_size = 2;
-        	ace_cargo_canLoad = 1;
+        ace_cargo_canLoad = 1;
 		class TransportMagazines {
-			mag_xx(MRAWS_HEAT_F, 6);
-			mag_xx(MRAWS_HE_F, 6);
-			mag_xx(MRAWS_HEAT55_F, 6);
-			mag_xx(CUP_Javelin_M, 3);
+			mag_xx(MRAWS_HEAT_F, 10);
+			mag_xx(MRAWS_HE_F, 10);
+			mag_xx(MRAWS_HEAT55_F, 10);
 		};
 		class TransportItems {};
 		class TransportWeapons {
-			weap_xx(launch_MRAWS_olive_F, 2);
-			weap_xx(CUP_launch_M136, 5);
-			weap_xx(CUP_launch_FIM92Stinger, 3);
-			weap_xx(CUP_launch_Javelin, 1);
-			weap_xx(CUP_launch_M72A6, 5);
+			weap_xx(launch_MRAWS_olive_F, 3);
+			weap_xx(CUP_launch_M136, 6);
 		};
 		class TransportBackpacks {};
 	};
@@ -68,10 +107,10 @@ class CfgVehicles {
 		editorCategory = "EdCat_61st_Supplies";
 		editorSubcategory = "EdSubcat_61st_resupply";
 		ace_dragging_canCarry = 1;
-        	ace_dragging_carryPosition[] = {0, 1.5, 1};
-        	ace_dragging_carryDirection = 90;
+        ace_dragging_carryPosition[] = {0, 1.5, 1};
+        ace_dragging_carryDirection = 90;
 		ace_cargo_size = 2;
-        	ace_cargo_canLoad = 1;
+        ace_cargo_canLoad = 1;
 		class TransportMagazines {
 			mag_xx(kat_Painkiller, 10);
 			mag_xx(kat_Carbonate, 10);
@@ -143,7 +182,7 @@ class CfgVehicles {
 		tf_range = 120000;
 		maximumLoad = 1000;
 	};
-	class tfar_invisible_radio: GVAR(Zeus_Pack_Invisible){
+	class tfar_inviisble_radio: GVAR(Zeus_Pack_Invisible){
 		scopeArsenal = protected;
 		scpoe = protected;
 		scopeCurator = protected;
