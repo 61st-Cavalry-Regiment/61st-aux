@@ -23,15 +23,15 @@ class CfgPatches
 };
 
 class CfgVehicles {
-	class RHS_AH64_base;
-	class RHS_AH64D: RHS_AH64_base {
+	class CUP_AH64D_Base;
+	class CUP_AH64D_dynamic_base: CUP_AH64D_Base {
 		class ACE_SelfActions;
 	};
 
-	class RHS_AH64D_wd: RHS_AH64D {
+	class CUP_B_AH64D_DL_USA: CUP_AH64D_dynamic_base {
 		lockDetectionSystem = 16;
 		incomingMissileDetectionSystem = 16;
-		#include "AceActions.hpp"
+		//#include "AceActions.hpp"
 	};
-	faction(AH64D_wd, RHS_AH64D_wd)
+	faction(AH64D_DL, CUP_B_AH64D_DL_USA)
 };
